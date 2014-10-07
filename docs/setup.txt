@@ -1,0 +1,59 @@
+
+	Steps to setup a new REST service on MarkLogic using the Rest Template pattern
+
+Clone the REST Template library from github.com
+	 git clone git@github.com:overstory/rest-template.git
+	 This code will be copied into your own source tree later
+
+Create a source tree project for your service
+	Example $PROJECTDIR/myservice
+		Create subdir appserver-root
+		copy everything from the root of the REST Template into the appserver-root directory
+
+MarkLogic Setup
+	Decide on a name for the service and its database, example: foobar
+	On the Admin screen (127.0.0.1:8001)
+
+	Create a forest, foobar-1 (databases can have multiple forests, this will be the first one)
+		All other settings can be left as default, unless you want to specify where the
+		forest should be stored.
+
+	Create a database, foobar
+		Set the follow non-defaults
+			word searches: true
+			triple-index: true
+			three character searches: true
+			trailing wildcards: true
+			collection lexicon: true
+
+		Upon hitting OK for database create, the response will prompt you to attach a
+		forest.  Select foobar-1 created previously.
+
+	Create an HTTP appserver, port 12000
+		name: 12000-foobar
+		path: $PROJECTDIR/myservice/appserver-root
+		port: 12000
+		modules: <filesystem>
+		database: foobar
+		authentication: application-level (this removes authentication, may be different for deployment)
+		default user: admin (may be a less capable user for deployment, but user needs to be able to rewrite URLS and catch errors, admin is usually OK)
+		error handler: /xquery/rest/error-handler.xqy
+		url rewriter: /xquery/rest/rewriter.xqy
+
+	At this point, you have the generic REST template in scope, point a browser at
+	127.0.0.1:12000, you should see a page that says:
+		Hi There
+                It seems to have worked. Well done.
+
+	You now have a REST service running on MarkLogic.  Next you need to configure the endpoints
+
+Service Setup
+	Go to $PROJECTDIR/myservice/appserver-root/xquery/rest and edit the file endpoints.xqy
+
+	Inside is an XML description of endpoints, with Regular Expressions and module paths.  Make
+	changes as appropriate to define your desired endpoints.  Detail as to options for endpoint
+	definitions can be found here: https://github.com/marklogic/ml-rest-lib
+
+Ron Hitchens, OverStory
+2014-10-07
+

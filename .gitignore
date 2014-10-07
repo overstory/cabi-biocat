@@ -1,4 +1,8 @@
 *.iws
+intellij/out
+z
+zz
 z.*
 zz.*
+other
 
