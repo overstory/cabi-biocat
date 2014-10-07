@@ -1,0 +1,46 @@
+<taxonomy-item xmlns="http://namespaces.cabi.org/namespaces/cabi/taxonomy">
+	<uri>urn:cabi.org:id:taxonomy:123</uri>
+
+
+	<name>raptor</name>
+	<scientific-name>foous</scientific-name>
+	<common-name>foo</common-name>
+	<common-name>bar</common-name>
+
+	<kingdom>foo</kingdom>
+	<phylum>foo</phylum>
+	<class>foo</class>
+	<order>foo</order>
+	<family>foo</family>
+	<genus>foo</genus>
+	<species>t rex</species>
+
+	<CONCEPT>
+		<DESCRIPTOR>(S)-2-hydroxy-acid oxidase</DESCRIPTOR>
+		<SubjectCategory>CH Chemicals and Chemical Groups</SubjectCategory>
+		<Non-preferredTerm>alpha-hydroxyacid oxidase</Non-preferredTerm>
+		<Non-preferredTerm>glycolate oxidase</Non-preferredTerm>
+		<BroaderTerm>alcohol oxidoreductases</BroaderTerm>
+		<CASRegistryNumber>9037-63-2</CASRegistryNumber>
+		<EnzymeCommissionNo.>1.1.3.15</EnzymeCommissionNo.>
+		<Status>Approved</Status>
+		<Inputdate>2004-08-03</Inputdate>
+		<Approveddate>2008-08-19</Approveddate>
+		<LastUpdated>2012-07-18</LastUpdated>
+		<Termnumber>8</Termnumber>
+	</CONCEPT>
+
+
+
+	<skos:Concept rdf:about="http://id.cabi.org/cabt/C/#Abagrotis">
+		<skos:prefLabel xml:lang="en-GB">Abagrotis</skos:prefLabel>
+		<skos:broader rdf:resource="http://id.cabi.org/cabt/C/#Noctuidae" />
+		<skos:narrower rdf:resource="http://id.cabi.org/cabt/C/#Abagrotis%20alternata" />
+		<skos:narrower rdf:resource="http://id.cabi.org/cabt/C/#Abagrotis%20placida" />
+		<dcterms:created>2012-04-30</dcterms:created>
+		<dcterms:dateAccepted>2012-05-01</dcterms:dateAccepted>
+		<dcterms:modified>2012-05-01</dcterms:modified>
+	</skos:Concept>
+
+
+</taxonomy-item>

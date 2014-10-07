@@ -1,0 +1,16 @@
+<cabi:organism xmlns:cabi="http://ns.cabi.org/biocat">
+	<uri>urn:cabi.org:biocat:entities:organism:1234</uri>
+	<!-- class order family genus species authorities notes -->
+	<taxonomy>
+		<taxonomic-reference>urn:cabi.org:taxonomy:cabthes:term:raptor123</taxonomic-reference>
+		<tree-terms>
+			<class/>
+			<order>Hymenoptera</order>
+			<family>Pteromalid</family>
+			<genus>Muscidifurax</genus>
+			<species>raptor</species>
+			<authorities/>
+			<notes>blah</notes>
+		</tree-terms>
+	</taxonomy>
+</cabi:organism>

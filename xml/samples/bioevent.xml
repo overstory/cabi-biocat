@@ -1,0 +1,111 @@
+<bio-event xmlns="http://ns.cabi.org/biocat">
+	<uri>urn:cabi.org:biocat:entities:event:oct2014-123</uri>
+	<dates>
+		<first-release>2003</first-release>
+		<reported>
+			<reported-range>
+				<start-year>1962</start-year>
+				<end-year>1975</end-year>
+			</reported-range>
+
+			<reported-range>
+				<start-year>1987</start-year>
+			</reported-range>
+
+			<year-reported>1928</year-reported>
+			<year-reported>1929</year-reported>
+			<year-reported>1941</year-reported>
+		</reported>
+	</dates>
+
+	<agent>
+		<organism-uri>urn:cabi.org:taxonomy:cabthes:term:raptor123</organism-uri>
+		<introduction>
+			<new-old-world>OW</new-old-world>    <!-- NW, OW -->
+			<new-old-world>NW</new-old-world>
+			<bio-geographic-range-uri range-code="CB">urn:cabi.org:geo-range:region:cb</bio-geographic-range-uri>
+			<country iso-code="gb">urn:cabi.org:geo:country:gb</country>
+			<country-region code="gb-ox">urn:cabi.org:geo:country:region:oxfordshire</country-region>
+		</introduction>
+
+		<export-from>
+			<new-old-world>OW</new-old-world>    <!-- NW, OW -->
+			<bio-geographic-range-uri range-code="CB">urn:cabi.org:geo-range:region:cb</bio-geographic-range-uri>
+			<country iso-code="gb">urn:cabi.org:geo:country:gb</country>
+			<country-region code="gb-ox">urn:cabi.org:geo:country:region:oxfordshire</country-region>
+			<via>
+				<country iso-code="fr">urn:cabi.org:geo:country:fr</country>
+				<orginzation>USDA</orginzation>
+			</via>
+		</export-from>
+	</agent>
+
+	<outcome>
+		<establishment text="Temporary establishment">urn:cabi.org:biocat:entities:event:outcome:establish:temp</establishment>
+		<impact text="Result Unknown">urn:cabi.org:biocat:entities:event:outcome:impact:unk</impact>
+		<result text="unknown relative contribution">urn:cabi.org:biocat:entities:event:outcome:result:urc</result>
+	</outcome>
+
+	<target>
+		<organism-uri>urn:cabi.org:taxonomy:cabthes:term:mouse789</organism-uri>
+		<habitat>
+			<new-old-world>OW</new-old-world>    <!-- NW, OW -->
+			<bio-geographic-region-uri>urn:cabi.org:geo-point:region:pa</bio-geographic-region-uri>
+			<bio-geographic-range-uri>urn:cabi.org:geo-range:polygon:24123434312</bio-geographic-range-uri>
+			<country iso-code="es">urn:cabi.org:geo:country:es</country>
+			<country-region code="catalonia">urn:cabi.org:geo:country:region:catalan</country-region>
+		</habitat>
+		<threatened-species>
+			<organism-uri>urn:cabi.org:taxonomy:cabthes:term:wheat</organism-uri>
+			<organism-uri>urn:cabi.org:taxonomy:cabthes:term:soy</organism-uri>
+		</threatened-species>
+		<comments>m i c, k e y, m o u s e</comments>
+	</target>
+
+	<references>
+		<reference>
+			<pan>234545245</pan>
+			<text>Smith 2012</text>
+		</reference>
+		<reference>
+			<doi>234545245</doi>
+			<text>Jone 2011</text>
+		</reference>
+	</references>
+
+	<additional-information>
+		<comments>sdfa dasd fadsf asdf afd</comments>
+		<outstanding-queries>
+			<query>WTF?</query>
+		</outstanding-queries>
+	</additional-information>
+
+</bio-event>
+
+
+<!--
+ Components
+	Agent
+		Unique identifier [A]
+		[B-H] Genus, species, authorities, notes, class, order, family
+		Introduction into
+			[AC-AF] intro into new/old world, biogeo range, country, region,
+		Ex
+			[AG-AK] new/old world, biogeo range, original country, original region of country, via
+		Establishement [AL]
+		Impact [AM]
+		Result [AN]
+	Target Species
+		[J-Q] class, order, family, genus, species, authorities, notes,
+		Origin
+			[R-W] new/old world, biogeo region, country, region in country, crop species, other comments
+	Dates
+		first released, date(s) as text
+	Other Pest (refs to Organism)
+		name, unique ID
+	Reference (PAN) [AO]
+	Reference (Citation) [AP]
+	Additional Comments [AQ]
+	Outstanding queries [AR]
+
+-->

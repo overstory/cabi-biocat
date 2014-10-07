@@ -1,0 +1,8 @@
+<refdata xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:biocat:refdata::category:impact</uri>
+	<display-name>Impact</display-name>
+	<description>Reference Data Category for impact of bio agent release</description>
+	<other-info>
+		<comment>Partial control as defined by ISO XXX.yyy</comment>
+	</other-info>
+</refdata>

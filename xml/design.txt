@@ -1,0 +1,136 @@
+
+Bio Event Service
+
+	Root URI: /biocat/event
+
+New event
+	POST /biocat/event
+	body: full <bio-event> doc
+	-> 201
+
+Update event
+	PUT /biocat/event/id/{id}
+	body: full <bio-event> doc
+	-> 201
+
+Delete event
+	DELETE /biocat/event/id/{id}
+	body: none
+	-> 204
+
+Retrieve one doc by ID
+	GET /biocat/id/{id}
+	-> 200, 404
+	result body: fill <bio-event> doc
+
+Search across all docs, returns list of matches
+	GET /biocat/event{?terms,year,year-range,agent,target,crop,location,establishment,impact,result}
+
+		year=1967
+		year=1987,1993,2012
+		year-range=1987-2002
+		agent=urn:cabi.org:taxonomy:cabthes:term:raptor123,urn:cabi.org:taxonomy:cabthes:term:bunny947
+		target=urn:cabi.org:taxonomy:cabthes:term:raptor123,urn:cabi.org:taxonomy:cabthes:term:bunny947
+		target=urn:cabi.org:taxonomy:cabthes:term:raptor123,urn:cabi.org:taxonomy:cabthes:term:bunny947
+		crop=urn:cabi.org:taxonomy:cabthes:term:cheese
+		location=urn:cabi.org:geodata:range1234
+
+ToDo:
+	Decide identifier allocation responsibility
+
+==============
+
+Refdata Service
+
+	Root URI: /biocat/refdata
+
+Five categories
+	Key code + other info
+
+Get list of categories
+	GET /biocat/refdata/category
+	-> Atom Feed listing all categories
+
+	<feed xmlns="http://www.w3.org/2005/Atom">
+		<link rel="self" href="/biocat/refdata" type="application/atom+xml"/>
+		<id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+		<updated>2013-12-13T18:30:02Z</updated>
+		<entry>
+			<link rel="self" href="/biocat/refdata/category/id/urn:cabi.org:biocat:refdata:category:impact" type="application/xml"/>
+			<content type="application/xml">
+				<refdata xmlns="xxxx">
+					<uri>urn:cabi.org:biocat:refdata::category:impact</uri>
+					<display-name>Impact</display-name>
+					<description>Reference Data Category for impact of bio agent release</description>
+				</refdata>
+			</content>
+		</entry>
+	</feed>
+
+Get a category resource by id
+	GET /biocat/refdata/category/items/id/{id}
+
+	<refdata xmlns="xxxx">
+		<uri>urn:cabi.org:biocat:refdata::category:impact</uri>
+		<display-name>Impact</display-name>
+		<description>Reference Data Category for impact of bio agent release</description>
+	</refdata>
+
+
+Search refdata by category, applying optional word or sub-string filtering
+	With no paramters, all entries are returned, wildcards may be used in "word"
+	GET /biocat/refdata/category/id/{category}/items{?word}
+	-> Atom feed of all entries in {category}
+
+Get refdata item by ID
+	GET /biocat/refdata/id/{id}
+
+<refdata xmlns="xxxx">
+	<uri>urn:cabi.org:biocat:refdata:part-con</uri>
+	<display-name>Partial Control</display-name>
+	<description>Reduced pest status but other controls/agents needed</description>
+	<other-info>
+		<comment>Partial control as defined by ISO XXX.yyy</comment>
+	</other-info>
+</refdata>
+
+===============
+
+Taxonomy Service
+
+	Root URI: /biocat/taxonomy
+
+Retrieve a single entry by ID
+	GET /biocat/taxonomy/id/{id}
+
+Search for organism by name/species/etc
+	GET /biocat/taxonomy{?terms,name,species,genus,family,class,order}
+	=> Atom Feed of matching taxonomy entries
+
+===============
+
+Geo Range Service
+
+	Root URI: /biocat/geodata
+
+Get a geo range polygon by ID
+	GET /biocat/geodata/id/{id}
+	GET /biocat/geodata/alias/{alias}
+
+Add a geo range polygon
+	POST /biocat/geodata
+	body: description of a geo point/radius or polygon (possible multiple of each)
+	=> URI of stored geodata
+
+Delete a geo range by ID
+	DELETE /biocat/geodata/id/{id}
+	-> 204
+
+Search by name (country code, for example) to find well-known areas
+	GET /biocat/geodata{?terms,alias}
+
+		/biocat/geodata?terms=unite
+			=> United States
+			   United Kindom
+			   United Arab Emirates
+		returns list of matching IDs

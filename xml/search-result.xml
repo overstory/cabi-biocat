@@ -1,0 +1,45 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+	  xmlns:s="http://ns.cabi.org/namespaces/search"
+	>
+	<link rel="self" href="/biocat/event?terms=acme&amp;page=3" type="application/atom+xml"/>
+	<link rel="next" href="/biocat/event?terms=acme&amp;page=4" type="application/atom+xml"/>
+	<link rel="prev" href="/biocat/event?terms=acme&amp;page=2" type="application/atom+xml"/>
+	<id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+	<updated>2013-12-13T18:30:02Z</updated>
+	<s:result-meta>
+		<s:total-hits>356</s:total-hits>
+		<s:first-item>41</s:first-item>
+		<s:returned-count>20</s:returned-count>
+	</s:result-meta>
+	<s:criteria>
+		<s:terms>cricket and seagull</s:terms>
+		<s:facets>true</s:facets>
+	</s:criteria>
+	<s:facets>
+		<s:facet>
+			<count>32</count>
+			<name>genus</name>
+			<display-name>Genus</display-name>
+			<link rel="constraint:genus" href="/biocat/event?terms=acme&amp;page=3&amp;genus=bacillus" type="application/atom+xml"/>
+		</s:facet>
+		<s:facet>
+			<count>7</count>
+			<name>order</name>
+			<display-name>Order</display-name>
+			<link rel="constraint:order" href="/biocat/event?terms=acme&amp;page=3&amp;order=protista" type="application/atom+xml"/>
+		</s:facet>
+	</s:facets>
+	<entry>
+		<id>urn:cabi.org:biocat:event:1234</id>
+		<link rel="self" href="/identifier/id/urn:cabi.org:biocat:event:1234" type="application/xml"/>
+		<updated>2013-12-13T18:30:02Z</updated>
+		<content type="application/xml">
+			<bio-event xmlns="http://ns.cabi.org/namespaces/biocat/event">
+				<uri>urn:overstory.co.uk:id:article:10.1088_1233_323_3_3</uri>
+				...
+			</bio-event>
+		</content>
+	</entry>
+	...
+</feed>
+
