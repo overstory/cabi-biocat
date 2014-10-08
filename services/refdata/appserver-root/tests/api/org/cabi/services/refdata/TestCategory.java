@@ -1,6 +1,9 @@
 package org.cabi.services.refdata;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.IOException;
 
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -14,12 +17,37 @@ import static org.hamcrest.Matchers.*;
 
 public class TestCategory extends RefDataTest
 {
-	@Test
-	public void shouldReturnEmptyAtomFeed()
+	public static final String BOGUS_ID = "i-am-a-bogus-category-id";
+
+	@BeforeClass
+	public static void setupDB() throws IOException
 	{
-		given()
+		clearDb();
+		loadDbFromResource ("category/bundle1.xml");
+	}
+
+	@Test
+	public void shouldReturn404ForNoItem()
+	{
+		given ()
 			.config (xmlConfig)
-			.header ("Accept", "application/atom+xml")
+			.header ("Accept", "applicaton/vnd.cabi.org:refdata:item+xml")
+		.when ()
+			.get ("/category/id/" + BOGUS_ID)
+		.then ()
+			.log ().ifStatusCodeMatches (not (404))
+			.statusCode (404)
+			.contentType ("application/vnd.cabi.org:errors+xml")
+			.body (hasXPath ("/e:errors/e:resource-not-found/e:id", usingNamespaces, equalTo (BOGUS_ID)))
+		;
+	}
+
+	@Test
+	public void shouldReturnSixCategories()
+	{
+		given ()
+			.config (xmlConfig)
+			.header ("Accept", "applicaton/atom+xml")
 		.when ()
 			.get ("/category")
 		.then ()
@@ -27,12 +55,14 @@ public class TestCategory extends RefDataTest
 			.statusCode (200)
 			.contentType ("application/atom+xml")
 			.body (hasXPath ("/atom:feed/atom:link/@rel", usingNamespaces, equalTo ("self")))
-			.body (hasXPath ("/atom:feed/atom:link/@href", usingNamespaces, equalTo ("/refdata/category")))
-			.body (hasXPath ("/atom:feed/atom:link/@type", usingNamespaces, equalTo ("application/atom+xml")))
-			.body (hasXPath ("/atom:feed/atom:id", usingNamespaces, not (isEmptyOrNullString())))
-			.body (hasXPath ("/atom:feed/atom:updated", usingNamespaces, not (isEmptyOrNullString())))
-//			.body (hasXPath ("/atom:feed/atom:updated castable as xs:date", usingNamespaces))
-			.body (hasXPath ("count(/atom:feed/atom:entry)", usingNamespaces, equalTo ("0")))
+			.body (hasXPath ("count(/atom:feed/atom:entry)", usingNamespaces, equalTo ("6")))
+			.body (hasXPath ("count(/atom:feed/atom:entry/atom:link/@href)", usingNamespaces, equalTo ("6")))
+			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:biocat:category:country']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:biocat:category:country")))
+			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:biocat:category:country']/rd:display-name", usingNamespaces, equalTo ("Country")))
+			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:biocat:category:impact']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:biocat:category:impact")))
+			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:biocat:category:impact']/rd:display-name", usingNamespaces, equalTo ("Impact")))
+			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:biocat:category:establishment']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:biocat:category:establishment")))
+			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:biocat:category:establishment']/rd:display-name", usingNamespaces, equalTo ("Establishment")))
 		;
 	}
 }

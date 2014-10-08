@@ -54,6 +54,12 @@ Service Setup
 	changes as appropriate to define your desired endpoints.  Detail as to options for endpoint
 	definitions can be found here: https://github.com/marklogic/ml-rest-lib
 
+=============
+
+To setup a test-support appserver, follow the above procedure but choose a different name, such as "test-support" and
+a different port number.  Set the appserver root path to point to the test support code root.  Set this test appserver
+to point to the same database.
+
 Ron Hitchens, OverStory
 2014-10-07
 
