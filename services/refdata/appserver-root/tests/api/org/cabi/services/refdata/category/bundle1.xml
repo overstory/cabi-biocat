@@ -1,47 +1,62 @@
 <container>
-	<refdata about="urn:id:cabi.org:biocat:category:impact" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
-		<uri>urn:cabi.org:id:biocat:category:impact</uri>
+	<!-- These are items that represent categories -->
+	<refdata about="urn:cabi.org:id:refdata:category:impact" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:impact</uri>
+		<item-type>category</item-type>
 		<display-name property="display-name">Impact</display-name>
 		<description>Reference Data Category for impact of bio agent release</description>
 		<other-info>
 			<comment>Reference list taken from original BIOCAT spreadsheet [BIOCAT 16.08.2013 (reference).xlsx]</comment>
 		</other-info>
 	</refdata>
-	<refdata about="urn:cabi.org:id:biocat:category:establishment" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
-		<uri>urn:cabi.org:id:biocat:category:establishment</uri>
+	<refdata about="urn:cabi.org:id:refdata:category:establishment" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:establishment</uri>
+		<item-type>category</item-type>
 		<display-name property="display-name">Establishment</display-name>
 		<description>Reference Data Category for establishment of bio agent release</description>
 		<other-info>
 			<comment>Reference list taken from original BIOCAT spreadsheet [BIOCAT 16.08.2013 (reference).xlsx]</comment>
 		</other-info>
 	</refdata>
-	<refdata about="urn:cabi.org:id:biocat:category:results-agent" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
-		<uri>urn:cabi.org:id:biocat:category:results-agent</uri>
+	<refdata about="urn:cabi.org:id:refdata:category:results-agent" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:results-agent</uri>
+		<item-type>category</item-type>
 		<display-name property="display-name">Results Agent</display-name>
 		<description>Reference Data Category for establishment of bio agent release</description>
 		<other-info>
 			<comment>Reference list taken from original BIOCAT spreadsheet [BIOCAT 16.08.2013 (reference).xlsx]</comment>
 		</other-info>
 	</refdata>
-	<refdata about="urn:cabi.org:id:biocat:category:regions" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
-		<uri>urn:cabi.org:id:biocat:category:regions</uri>
+	<refdata about="urn:cabi.org:id:refdata:category:regions" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:regions</uri>
+		<item-type>category</item-type>
 		<display-name property="display-name">Regions</display-name>
 		<description>Reference Data Category for Regions of bio agent release</description>
 		<other-info>
 			<comment>Reference list taken from original BIOCAT spreadsheet [BIOCAT 16.08.2013 (reference).xlsx]</comment>
 		</other-info>
 	</refdata>
-	<refdata about="urn:cabi.org:id:biocat:category:country" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
-		<uri>urn:cabi.org:id:biocat:category:country</uri>
+	<refdata about="urn:cabi.org:id:refdata:category:country" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:country</uri>
+		<item-type>category</item-type>
 		<display-name property="display-name">Country</display-name>
 		<description>This is a BioCat category</description>
 	</refdata>
-	<refdata about="urn:cabi.org:id:biocat:category:country-regions" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
-		<uri>urn:cabi.org:id:biocat:category:country-regions</uri>
+	<refdata about="urn:cabi.org:id:refdata:category:country-regions" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:country-regions</uri>
+		<item-type>category</item-type>
 		<display-name property="display-name">Country-Regions</display-name>
 		<description>Reference Data Category for Country-Regions of bio agent release</description>
 		<other-info>
 			<comment>Reference list taken from original BIOCAT spreadsheet [BIOCAT 16.08.2013 (reference).xlsx]</comment>
 		</other-info>
+	</refdata>
+
+	<!-- These are individual refdata items -->
+	<refdata about="urn:cabi.org:id:refdata:category:country:uk" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+		<uri>urn:cabi.org:id:refdata:category:country:uk</uri>
+		<item-type>item</item-type>
+		<display-name property="display-name">United Kingdom</display-name>
+		<description>Rule Britannia</description>
 	</refdata>
 </container>

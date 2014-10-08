@@ -16,7 +16,8 @@ declare function local:insert-refdata (
 )
 {
 	let $doc-uri := "/refdata/item/" || fn:string ($item/rd:uri) || ".xml"
-	return xdmp:document-insert ($doc-uri, $item, xdmp:default-permissions(), $const:REFDATA-COLLECTIONS)
+	return xdmp:document-insert ($doc-uri, $item, xdmp:default-permissions(),
+		($const:REFDATA-COLLECTIONS, $const:type-collection-name-root || $item/rd:item-type/fn:string()))
 };
 
 if ($body instance of element(container))

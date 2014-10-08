@@ -57,12 +57,49 @@ public class TestCategory extends RefDataTest
 			.body (hasXPath ("/atom:feed/atom:link/@rel", usingNamespaces, equalTo ("self")))
 			.body (hasXPath ("count(/atom:feed/atom:entry)", usingNamespaces, equalTo ("6")))
 			.body (hasXPath ("count(/atom:feed/atom:entry/atom:link/@href)", usingNamespaces, equalTo ("6")))
-			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:biocat:category:country']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:biocat:category:country")))
-			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:biocat:category:country']/rd:display-name", usingNamespaces, equalTo ("Country")))
-			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:biocat:category:impact']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:biocat:category:impact")))
-			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:biocat:category:impact']/rd:display-name", usingNamespaces, equalTo ("Impact")))
-			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:biocat:category:establishment']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:biocat:category:establishment")))
-			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:biocat:category:establishment']/rd:display-name", usingNamespaces, equalTo ("Establishment")))
+			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:refdata:category:country']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:refdata:category:country")))
+			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:refdata:category:country']/rd:display-name", usingNamespaces, equalTo ("Country")))
+			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:refdata:category:impact']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:refdata:category:impact")))
+			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:refdata:category:impact']/rd:display-name", usingNamespaces, equalTo ("Impact")))
+			.body (hasXPath ("/atom:feed/atom:entry[atom:content/rd:refdata/rd:uri = 'urn:cabi.org:id:refdata:category:establishment']/atom:link/@href", usingNamespaces, equalTo ("/refdata/category/id/urn:cabi.org:id:refdata:category:establishment")))
+			.body (hasXPath ("/atom:feed/atom:entry/atom:content/rd:refdata[rd:uri = 'urn:cabi.org:id:refdata:category:establishment']/rd:display-name", usingNamespaces, equalTo ("Establishment")))
 		;
 	}
+
+	@Test
+	public void shouldReturnSpecificCategoryById ()
+	{
+		String uri = "urn:cabi.org:id:refdata:category:country";
+
+		given ()
+			.config (xmlConfig)
+			.header ("Accept", "applicaton/vnd.cabi.org:refdata:item+xml")
+		.when ()
+			.get ("/category/id/" + uri)
+		.then ()
+			.log ().ifStatusCodeMatches (not (200))
+			.statusCode (200)
+			.contentType ("applicaton/vnd.cabi.org:refdata:item+xml")
+			.body (hasXPath ("/rd:refdata/rd:uri", usingNamespaces, equalTo (uri)))
+		;
+	}
+
+	@Test
+	public void shouldNotReturnSpecificNonCategoryById ()
+	{
+		String uri = "urn:cabi.org:id:refdata:category:country:uk";
+
+		given ()
+			.config (xmlConfig)
+			.header ("Accept", "applicaton/vnd.cabi.org:refdata:item+xml")
+		.when ()
+			.get ("/category/id/" + uri)
+		.then ()
+			.log ().ifStatusCodeMatches (not (404))
+			.statusCode (404)
+			.contentType ("application/vnd.cabi.org:errors+xml")
+			.body (hasXPath ("/e:errors/e:resource-not-found/e:id", usingNamespaces, equalTo (uri)))
+		;
+	}
+
 }

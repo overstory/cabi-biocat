@@ -1,6 +1,9 @@
 package org.cabi.services.refdata;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.IOException;
 
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -15,8 +18,16 @@ import static org.hamcrest.Matchers.*;
 public class TestItems extends RefDataTest
 {
 	public static final String BOGUS_ID = "i-am-a-bogus-item-id";
+
+	@BeforeClass
+	public static void setupDB() throws IOException
+	{
+		clearDb();
+		loadDbFromResource ("category/bundle1.xml");
+	}
+
 	@Test
-	public void shouldReturn404ForNoItem()
+	public void shouldReturn404ForBogusItem()
 	{
 		given ()
 			.config (xmlConfig)
@@ -28,6 +39,24 @@ public class TestItems extends RefDataTest
 			.statusCode (404)
 			.contentType ("application/vnd.cabi.org:errors+xml")
 			.body (hasXPath ("/e:errors/e:resource-not-found/e:id", usingNamespaces, equalTo (BOGUS_ID)))
+		;
+	}
+
+	@Test
+	public void shouldReturnSpecificItemById ()
+	{
+		String uri = "urn:cabi.org:id:refdata:category:country:uk";
+
+		given ()
+			.config (xmlConfig)
+			.header ("Accept", "applicaton/vnd.cabi.org:refdata:item+xml")
+		.when ()
+			.get ("/item/id/" + uri)
+		.then ()
+			.log ().ifStatusCodeMatches (not (200))
+			.statusCode (200)
+			.contentType ("applicaton/vnd.cabi.org:refdata:item+xml")
+			.body (hasXPath ("/rd:refdata/rd:uri", usingNamespaces, equalTo (uri)))
 		;
 	}
 }
