@@ -24,7 +24,11 @@ declare private variable $endpoints as element(rest:options) :=
 		<request uri="^/refdata/category$" endpoint="/xquery/handlers/get-categories.xqy"  user-params="deny">
 		</request>
 
-		<request uri="^/refdata/category/id/(.*)$" endpoint="/xquery/handlers/get-category-by-id.xqy"  user-params="deny">
+		<request uri="^/refdata/category/id/([^/]+)$" endpoint="/xquery/handlers/get-category-by-id.xqy"  user-params="deny">
+			<uri-param name="id">$1</uri-param>
+		</request>
+
+		<request uri="^/refdata/category/id/([^/]+)/item$" endpoint="/xquery/handlers/search-category.xqy" user-params="allow">
 			<uri-param name="id">$1</uri-param>
 		</request>
 

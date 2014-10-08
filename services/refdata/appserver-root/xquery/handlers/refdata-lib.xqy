@@ -28,6 +28,25 @@ declare function get-category-item-by-id (
 	get-item-from-collection ($id, $refdata-category-collection-name)
 };
 
+declare function get-items-for-category (
+	$category-id as xs:string,
+	$word as xs:string?
+) as element(rd:refdata)*
+{
+	let $category-qname := xs:QName ("rd:category")
+	let $query :=
+		if (fn:empty ($word))
+		then cts:element-value-query ($category-qname, $category-id, "exact")
+		else
+			cts:and-query ((
+				cts:word-query ($word),
+				cts:element-value-query ($category-qname, $category-id, "exact")
+			))
+	return cts:search (fn:collection ($refdata-collection-name), $query)/rd:refdata
+
+	(: fn:collection ($refdata-collection-name)/rd:refdata[rd:category = $category-id] :)
+};
+
 (: ------------------------------------------------- :)
 
 declare private function get-item-from-collection (
