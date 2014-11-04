@@ -7,8 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/../services/refdata/appserver-root/css" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../services/refdata/appserver-root/images" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../services/refdata/appserver-root/tests/api" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../services/geodata/appserver-root/tests/api" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../services/taxomony/appserver-root/tests/api" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../services/taxomony/appserver-root/xquery" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.jayway.restassured:xml-path:2.3.4" level="project" />
     <orderEntry type="library" name="com.jayway.restassured:rest-assured:2.3.4" level="project" />

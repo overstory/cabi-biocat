@@ -1,0 +1,2002 @@
+<container>
+	<refdata about="urn:cabi.org:id:refdata:category:country:AF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Afghanistan</display-name>
+	<description></description>
+	<geonameid>1149361</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AX" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AX</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Aland Islands</display-name>
+	<description></description>
+	<geonameid>661882</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Albania</display-name>
+	<description></description>
+	<geonameid>783754</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:DZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:DZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Algeria</display-name>
+	<description></description>
+	<geonameid>2589581</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">American Samoa</display-name>
+	<description></description>
+	<geonameid>5880801</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Andorra</display-name>
+	<description></description>
+	<geonameid>3041565</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Angola</display-name>
+	<description></description>
+	<geonameid>3351879</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Anguilla</display-name>
+	<description></description>
+	<geonameid>3573511</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AQ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AQ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Antarctica</display-name>
+	<description></description>
+	<geonameid>6697173</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Antigua and Barbuda</display-name>
+	<description></description>
+	<geonameid>3576396</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Argentina</display-name>
+	<description></description>
+	<geonameid>3865483</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Armenia</display-name>
+	<description></description>
+	<geonameid>174982</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Aruba</display-name>
+	<description></description>
+	<geonameid>3577279</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Australia</display-name>
+	<description></description>
+	<geonameid>2077456</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Austria</display-name>
+	<description></description>
+	<geonameid>2782113</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Azerbaijan</display-name>
+	<description></description>
+	<geonameid>587116</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bahamas</display-name>
+	<description></description>
+	<geonameid>3572887</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bahrain</display-name>
+	<description></description>
+	<geonameid>290291</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bangladesh</display-name>
+	<description></description>
+	<geonameid>1210997</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BB" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BB</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Barbados</display-name>
+	<description></description>
+	<geonameid>3374084</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Belarus</display-name>
+	<description></description>
+	<geonameid>630336</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Belgium</display-name>
+	<description></description>
+	<geonameid>2802361</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Belize</display-name>
+	<description></description>
+	<geonameid>3582678</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BJ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BJ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Benin</display-name>
+	<description></description>
+	<geonameid>2395170</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bermuda</display-name>
+	<description></description>
+	<geonameid>3573345</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bhutan</display-name>
+	<description></description>
+	<geonameid>1252634</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bolivia</display-name>
+	<description></description>
+	<geonameid>3923057</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BQ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BQ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bonaire, Saint Eustatius and Saba </display-name>
+	<description></description>
+	<geonameid>7626844</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bosnia and Herzegovina</display-name>
+	<description></description>
+	<geonameid>3277605</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Botswana</display-name>
+	<description></description>
+	<geonameid>933860</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BV" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BV</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bouvet Island</display-name>
+	<description></description>
+	<geonameid>3371123</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Brazil</display-name>
+	<description></description>
+	<geonameid>3469034</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">British Indian Ocean Territory</display-name>
+	<description></description>
+	<geonameid>1282588</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">British Virgin Islands</display-name>
+	<description></description>
+	<geonameid>3577718</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Brunei</display-name>
+	<description></description>
+	<geonameid>1820814</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Bulgaria</display-name>
+	<description></description>
+	<geonameid>732800</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Burkina Faso</display-name>
+	<description></description>
+	<geonameid>2361809</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Burundi</display-name>
+	<description></description>
+	<geonameid>433561</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cambodia</display-name>
+	<description></description>
+	<geonameid>1831722</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cameroon</display-name>
+	<description></description>
+	<geonameid>2233387</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Canada</display-name>
+	<description></description>
+	<geonameid>6251999</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CV" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CV</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cape Verde</display-name>
+	<description></description>
+	<geonameid>3374766</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cayman Islands</display-name>
+	<description></description>
+	<geonameid>3580718</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Central African Republic</display-name>
+	<description></description>
+	<geonameid>239880</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Chad</display-name>
+	<description></description>
+	<geonameid>2434508</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Chile</display-name>
+	<description></description>
+	<geonameid>3895114</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">China</display-name>
+	<description></description>
+	<geonameid>1814991</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CX" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CX</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Christmas Island</display-name>
+	<description></description>
+	<geonameid>2078138</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cocos Islands</display-name>
+	<description></description>
+	<geonameid>1547376</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Colombia</display-name>
+	<description></description>
+	<geonameid>3686110</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Comoros</display-name>
+	<description></description>
+	<geonameid>921929</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cook Islands</display-name>
+	<description></description>
+	<geonameid>1899402</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Costa Rica</display-name>
+	<description></description>
+	<geonameid>3624060</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:HR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:HR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Croatia</display-name>
+	<description></description>
+	<geonameid>3202326</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cuba</display-name>
+	<description></description>
+	<geonameid>3562981</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Curaçao</display-name>
+	<description></description>
+	<geonameid>7626836</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Cyprus</display-name>
+	<description></description>
+	<geonameid>146669</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Czech Republic</display-name>
+	<description></description>
+	<geonameid>3077311</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Democratic Republic of the Congo</display-name>
+	<description></description>
+	<geonameid>203312</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:DK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:DK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Denmark</display-name>
+	<description></description>
+	<geonameid>2623032</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:DJ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:DJ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Djibouti</display-name>
+	<description></description>
+	<geonameid>223816</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:DM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:DM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Dominica</display-name>
+	<description></description>
+	<geonameid>3575830</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:DO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:DO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Dominican Republic</display-name>
+	<description></description>
+	<geonameid>3508796</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">East Timor</display-name>
+	<description></description>
+	<geonameid>1966436</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:EC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:EC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Ecuador</display-name>
+	<description></description>
+	<geonameid>3658394</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:EG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:EG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Egypt</display-name>
+	<description></description>
+	<geonameid>357994</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SV" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SV</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">El Salvador</display-name>
+	<description></description>
+	<geonameid>3585968</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GQ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GQ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Equatorial Guinea</display-name>
+	<description></description>
+	<geonameid>2309096</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ER" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ER</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Eritrea</display-name>
+	<description></description>
+	<geonameid>338010</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:EE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:EE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Estonia</display-name>
+	<description></description>
+	<geonameid>453733</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ET" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ET</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Ethiopia</display-name>
+	<description></description>
+	<geonameid>337996</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:FK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:FK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Falkland Islands</display-name>
+	<description></description>
+	<geonameid>3474414</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:FO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:FO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Faroe Islands</display-name>
+	<description></description>
+	<geonameid>2622320</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:FJ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:FJ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Fiji</display-name>
+	<description></description>
+	<geonameid>2205218</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:FI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:FI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Finland</display-name>
+	<description></description>
+	<geonameid>660013</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:FR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:FR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">France</display-name>
+	<description></description>
+	<geonameid>3017382</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">French Guiana</display-name>
+	<description></description>
+	<geonameid>3381670</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">French Polynesia</display-name>
+	<description></description>
+	<geonameid>4030656</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">French Southern Territories</display-name>
+	<description></description>
+	<geonameid>1546748</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Gabon</display-name>
+	<description></description>
+	<geonameid>2400553</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Gambia</display-name>
+	<description></description>
+	<geonameid>2413451</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Georgia</display-name>
+	<description></description>
+	<geonameid>614540</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:DE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:DE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Germany</display-name>
+	<description></description>
+	<geonameid>2921044</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Ghana</display-name>
+	<description></description>
+	<geonameid>2300660</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Gibraltar</display-name>
+	<description></description>
+	<geonameid>2411586</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Greece</display-name>
+	<description></description>
+	<geonameid>390903</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Greenland</display-name>
+	<description></description>
+	<geonameid>3425505</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Grenada</display-name>
+	<description></description>
+	<geonameid>3580239</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GP" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GP</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guadeloupe</display-name>
+	<description></description>
+	<geonameid>3579143</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guam</display-name>
+	<description></description>
+	<geonameid>4043988</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guatemala</display-name>
+	<description></description>
+	<geonameid>3595528</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guernsey</display-name>
+	<description></description>
+	<geonameid>3042362</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guinea</display-name>
+	<description></description>
+	<geonameid>2420477</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guinea-Bissau</display-name>
+	<description></description>
+	<geonameid>2372248</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Guyana</display-name>
+	<description></description>
+	<geonameid>3378535</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:HT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:HT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Haiti</display-name>
+	<description></description>
+	<geonameid>3723988</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:HM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:HM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Heard Island and McDonald Islands</display-name>
+	<description></description>
+	<geonameid>1547314</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:HN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:HN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Honduras</display-name>
+	<description></description>
+	<geonameid>3608932</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:HK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:HK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Hong Kong</display-name>
+	<description></description>
+	<geonameid>1819730</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:HU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:HU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Hungary</display-name>
+	<description></description>
+	<geonameid>719819</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Iceland</display-name>
+	<description></description>
+	<geonameid>2629691</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">India</display-name>
+	<description></description>
+	<geonameid>1269750</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ID" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ID</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Indonesia</display-name>
+	<description></description>
+	<geonameid>1643084</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Iran</display-name>
+	<description></description>
+	<geonameid>130758</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IQ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IQ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Iraq</display-name>
+	<description></description>
+	<geonameid>99237</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Ireland</display-name>
+	<description></description>
+	<geonameid>2963597</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Isle of Man</display-name>
+	<description></description>
+	<geonameid>3042225</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Israel</display-name>
+	<description></description>
+	<geonameid>294640</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:IT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:IT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Italy</display-name>
+	<description></description>
+	<geonameid>3175395</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Ivory Coast</display-name>
+	<description></description>
+	<geonameid>2287781</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:JM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:JM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Jamaica</display-name>
+	<description></description>
+	<geonameid>3489940</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:JP" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:JP</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Japan</display-name>
+	<description></description>
+	<geonameid>1861060</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:JE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:JE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Jersey</display-name>
+	<description></description>
+	<geonameid>3042142</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:JO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:JO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Jordan</display-name>
+	<description></description>
+	<geonameid>248816</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Kazakhstan</display-name>
+	<description></description>
+	<geonameid>1522867</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Kenya</display-name>
+	<description></description>
+	<geonameid>192950</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Kiribati</display-name>
+	<description></description>
+	<geonameid>4030945</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:XK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:XK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Kosovo</display-name>
+	<description></description>
+	<geonameid>831053</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Kuwait</display-name>
+	<description></description>
+	<geonameid>285570</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Kyrgyzstan</display-name>
+	<description></description>
+	<geonameid>1527747</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Laos</display-name>
+	<description></description>
+	<geonameid>1655842</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LV" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LV</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Latvia</display-name>
+	<description></description>
+	<geonameid>458258</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LB" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LB</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Lebanon</display-name>
+	<description></description>
+	<geonameid>272103</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Lesotho</display-name>
+	<description></description>
+	<geonameid>932692</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Liberia</display-name>
+	<description></description>
+	<geonameid>2275384</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Libya</display-name>
+	<description></description>
+	<geonameid>2215636</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Liechtenstein</display-name>
+	<description></description>
+	<geonameid>3042058</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Lithuania</display-name>
+	<description></description>
+	<geonameid>597427</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Luxembourg</display-name>
+	<description></description>
+	<geonameid>2960313</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Macao</display-name>
+	<description></description>
+	<geonameid>1821275</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Macedonia</display-name>
+	<description></description>
+	<geonameid>718075</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Madagascar</display-name>
+	<description></description>
+	<geonameid>1062947</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Malawi</display-name>
+	<description></description>
+	<geonameid>927384</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Malaysia</display-name>
+	<description></description>
+	<geonameid>1733045</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MV" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MV</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Maldives</display-name>
+	<description></description>
+	<geonameid>1282028</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ML" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ML</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mali</display-name>
+	<description></description>
+	<geonameid>2453866</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Malta</display-name>
+	<description></description>
+	<geonameid>2562770</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Marshall Islands</display-name>
+	<description></description>
+	<geonameid>2080185</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MQ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MQ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Martinique</display-name>
+	<description></description>
+	<geonameid>3570311</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mauritania</display-name>
+	<description></description>
+	<geonameid>2378080</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mauritius</display-name>
+	<description></description>
+	<geonameid>934292</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:YT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:YT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mayotte</display-name>
+	<description></description>
+	<geonameid>1024031</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MX" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MX</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mexico</display-name>
+	<description></description>
+	<geonameid>3996063</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:FM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:FM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Micronesia</display-name>
+	<description></description>
+	<geonameid>2081918</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Moldova</display-name>
+	<description></description>
+	<geonameid>617790</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Monaco</display-name>
+	<description></description>
+	<geonameid>2993457</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mongolia</display-name>
+	<description></description>
+	<geonameid>2029969</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ME" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ME</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Montenegro</display-name>
+	<description></description>
+	<geonameid>3194884</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Montserrat</display-name>
+	<description></description>
+	<geonameid>3578097</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Morocco</display-name>
+	<description></description>
+	<geonameid>2542007</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Mozambique</display-name>
+	<description></description>
+	<geonameid>1036973</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Myanmar</display-name>
+	<description></description>
+	<geonameid>1327865</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Namibia</display-name>
+	<description></description>
+	<geonameid>3355338</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Nauru</display-name>
+	<description></description>
+	<geonameid>2110425</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NP" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NP</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Nepal</display-name>
+	<description></description>
+	<geonameid>1282988</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Netherlands</display-name>
+	<description></description>
+	<geonameid>2750405</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">New Caledonia</display-name>
+	<description></description>
+	<geonameid>2139685</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">New Zealand</display-name>
+	<description></description>
+	<geonameid>2186224</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Nicaragua</display-name>
+	<description></description>
+	<geonameid>3617476</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Niger</display-name>
+	<description></description>
+	<geonameid>2440476</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Nigeria</display-name>
+	<description></description>
+	<geonameid>2328926</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Niue</display-name>
+	<description></description>
+	<geonameid>4036232</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Norfolk Island</display-name>
+	<description></description>
+	<geonameid>2155115</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KP" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KP</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">North Korea</display-name>
+	<description></description>
+	<geonameid>1873107</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MP" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MP</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Northern Mariana Islands</display-name>
+	<description></description>
+	<geonameid>4041468</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:NO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:NO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Norway</display-name>
+	<description></description>
+	<geonameid>3144096</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:OM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:OM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Oman</display-name>
+	<description></description>
+	<geonameid>286963</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Pakistan</display-name>
+	<description></description>
+	<geonameid>1168579</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Palau</display-name>
+	<description></description>
+	<geonameid>1559582</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Palestinian Territory</display-name>
+	<description></description>
+	<geonameid>6254930</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Panama</display-name>
+	<description></description>
+	<geonameid>3703430</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Papua New Guinea</display-name>
+	<description></description>
+	<geonameid>2088628</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Paraguay</display-name>
+	<description></description>
+	<geonameid>3437598</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Peru</display-name>
+	<description></description>
+	<geonameid>3932488</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Philippines</display-name>
+	<description></description>
+	<geonameid>1694008</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Pitcairn</display-name>
+	<description></description>
+	<geonameid>4030699</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Poland</display-name>
+	<description></description>
+	<geonameid>798544</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Portugal</display-name>
+	<description></description>
+	<geonameid>2264397</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Puerto Rico</display-name>
+	<description></description>
+	<geonameid>4566966</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:QA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:QA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Qatar</display-name>
+	<description></description>
+	<geonameid>289688</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Republic of the Congo</display-name>
+	<description></description>
+	<geonameid>2260494</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:RE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:RE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Reunion</display-name>
+	<description></description>
+	<geonameid>935317</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:RO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:RO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Romania</display-name>
+	<description></description>
+	<geonameid>798549</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:RU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:RU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Russia</display-name>
+	<description></description>
+	<geonameid>2017370</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:RW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:RW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Rwanda</display-name>
+	<description></description>
+	<geonameid>49518</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:BL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:BL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Barthélemy</display-name>
+	<description></description>
+	<geonameid>3578476</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Helena</display-name>
+	<description></description>
+	<geonameid>3370751</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Kitts and Nevis</display-name>
+	<description></description>
+	<geonameid>3575174</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Lucia</display-name>
+	<description></description>
+	<geonameid>3576468</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:MF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:MF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Martin</display-name>
+	<description></description>
+	<geonameid>3578421</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:PM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:PM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Pierre and Miquelon</display-name>
+	<description></description>
+	<geonameid>3424932</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saint Vincent and the Grenadines</display-name>
+	<description></description>
+	<geonameid>3577815</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:WS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:WS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Samoa</display-name>
+	<description></description>
+	<geonameid>4034894</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">San Marino</display-name>
+	<description></description>
+	<geonameid>3168068</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ST" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ST</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Sao Tome and Principe</display-name>
+	<description></description>
+	<geonameid>2410758</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Saudi Arabia</display-name>
+	<description></description>
+	<geonameid>102358</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Senegal</display-name>
+	<description></description>
+	<geonameid>2245662</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:RS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:RS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Serbia</display-name>
+	<description></description>
+	<geonameid>6290252</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Seychelles</display-name>
+	<description></description>
+	<geonameid>241170</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SL" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SL</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Sierra Leone</display-name>
+	<description></description>
+	<geonameid>2403846</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Singapore</display-name>
+	<description></description>
+	<geonameid>1880251</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SX" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SX</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Sint Maarten</display-name>
+	<description></description>
+	<geonameid>7609695</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Slovakia</display-name>
+	<description></description>
+	<geonameid>3057568</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Slovenia</display-name>
+	<description></description>
+	<geonameid>3190538</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SB" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SB</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Solomon Islands</display-name>
+	<description></description>
+	<geonameid>2103350</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Somalia</display-name>
+	<description></description>
+	<geonameid>51537</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ZA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ZA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">South Africa</display-name>
+	<description></description>
+	<geonameid>953987</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">South Georgia and the South Sandwich Islands</display-name>
+	<description></description>
+	<geonameid>3474415</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:KR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:KR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">South Korea</display-name>
+	<description></description>
+	<geonameid>1835841</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SS" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SS</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">South Sudan</display-name>
+	<description></description>
+	<geonameid>7909807</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ES" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ES</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Spain</display-name>
+	<description></description>
+	<geonameid>2510769</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:LK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:LK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Sri Lanka</display-name>
+	<description></description>
+	<geonameid>1227603</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SD" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SD</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Sudan</display-name>
+	<description></description>
+	<geonameid>366755</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Suriname</display-name>
+	<description></description>
+	<geonameid>3382998</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SJ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SJ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Svalbard and Jan Mayen</display-name>
+	<description></description>
+	<geonameid>607072</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Swaziland</display-name>
+	<description></description>
+	<geonameid>934841</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Sweden</display-name>
+	<description></description>
+	<geonameid>2661886</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:CH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:CH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Switzerland</display-name>
+	<description></description>
+	<geonameid>2658434</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:SY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:SY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Syria</display-name>
+	<description></description>
+	<geonameid>163843</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Taiwan</display-name>
+	<description></description>
+	<geonameid>1668284</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TJ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TJ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Tajikistan</display-name>
+	<description></description>
+	<geonameid>1220409</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Tanzania</display-name>
+	<description></description>
+	<geonameid>149590</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Thailand</display-name>
+	<description></description>
+	<geonameid>1605651</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Togo</display-name>
+	<description></description>
+	<geonameid>2363686</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TK" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TK</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Tokelau</display-name>
+	<description></description>
+	<geonameid>4031074</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TO" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TO</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Tonga</display-name>
+	<description></description>
+	<geonameid>4032283</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TT" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TT</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Trinidad and Tobago</display-name>
+	<description></description>
+	<geonameid>3573591</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Tunisia</display-name>
+	<description></description>
+	<geonameid>2464461</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TR" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TR</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Turkey</display-name>
+	<description></description>
+	<geonameid>298795</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Turkmenistan</display-name>
+	<description></description>
+	<geonameid>1218197</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TC" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TC</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Turks and Caicos Islands</display-name>
+	<description></description>
+	<geonameid>3576916</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:TV" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:TV</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Tuvalu</display-name>
+	<description></description>
+	<geonameid>2110297</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VI" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VI</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">U.S. Virgin Islands</display-name>
+	<description></description>
+	<geonameid>4796775</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:UG" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:UG</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Uganda</display-name>
+	<description></description>
+	<geonameid>226074</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:UA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:UA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Ukraine</display-name>
+	<description></description>
+	<geonameid>690791</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:AE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:AE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">United Arab Emirates</display-name>
+	<description></description>
+	<geonameid>290557</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:GB" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:GB</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">United Kingdom</display-name>
+	<description></description>
+	<geonameid>2635167</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:US" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:US</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">United States</display-name>
+	<description></description>
+	<geonameid>6252001</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:UM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:UM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">United States Minor Outlying Islands</display-name>
+	<description></description>
+	<geonameid>5854968</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:UY" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:UY</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Uruguay</display-name>
+	<description></description>
+	<geonameid>3439705</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:UZ" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:UZ</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Uzbekistan</display-name>
+	<description></description>
+	<geonameid>1512440</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VU" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VU</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Vanuatu</display-name>
+	<description></description>
+	<geonameid>2134431</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VA" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VA</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Vatican</display-name>
+	<description></description>
+	<geonameid>3164670</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Venezuela</display-name>
+	<description></description>
+	<geonameid>3625428</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:VN" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:VN</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Vietnam</display-name>
+	<description></description>
+	<geonameid>1562822</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:WF" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:WF</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Wallis and Futuna</display-name>
+	<description></description>
+	<geonameid>4034749</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:EH" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:EH</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Western Sahara</display-name>
+	<description></description>
+	<geonameid>2461445</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:YE" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:YE</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Yemen</display-name>
+	<description></description>
+	<geonameid>69543</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ZM" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ZM</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Zambia</display-name>
+	<description></description>
+	<geonameid>895949</geonameid>
+</refdata>
+<refdata about="urn:cabi.org:id:refdata:category:country:ZW" xmlns="http://namespaces.cabi.org/namespaces/cabi/refdata">
+	<uri>urn:cabi.org:id:refdata:category:country:ZW</uri>
+	<item-type>item</item-type>
+	<category>urn:cabi.org:id:refdata:category:country</category>
+	<display-name property="display-name">Zimbabwe</display-name>
+	<description></description>
+	<geonameid>878675</geonameid>
+</refdata>
+</container>

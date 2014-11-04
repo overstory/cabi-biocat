@@ -1,0 +1,12 @@
+<gd:geodata-item xmlns:gd="http://namespaces.cabi.org/namespaces/cabi/geodata">
+    <gd:uri>urn:cabi.org:id:geodata:2014-10-21:12345</gd:uri>
+    <gd:geonameid>12345</gd:geonameid>
+    <gd:name>Centre of the map</gd:name>
+    <gd:alias>CentreTest</gd:alias>
+    <gd:geo>
+        <gd:centre-point>
+            <gd:lat>0</gd:lat>
+            <gd:lng>0</gd:lng>
+        </gd:centre-point>
+    </gd:geo>
+</gd:geodata-item>

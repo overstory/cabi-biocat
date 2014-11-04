@@ -1,0 +1,63 @@
+<cabi:bio-event about="urn:cabi.org:biocat:id:outcome:item:1051" xmlns:cabi="http://namespaces.cabi.org/namespaces/cabi" xmlns:biol="http://ontologi.es/biol/ns" xmlns:dcterms="http://purl.org/dc/terms" xmlns:rd="http://namespaces.cabi.org/namespaces/cabi/refdata">
+  <cabi:uri>urn:cabi.org:biocat:id:event:item:1051</cabi:uri>
+  <cabi:status>confirmed</cabi:status>
+  <cabi:dates>
+    <cabi:first-release>1971-01-01</cabi:first-release>
+    <cabi:dates-reported>
+      <cabi:year-reported>1995-01-01</cabi:year-reported>
+    </cabi:dates-reported>
+  </cabi:dates>
+  <cabi:agent>
+    <cabi:organism>
+      <cabi:organism-uri>urn:cabi.org:biocat:refdata:id:category:organism:item:1511</cabi:organism-uri>
+      <cabi:Thesaurus-uri property="cabi:Thesaurus-uri">http://id.cabi.org/cabt/00000</cabi:Thesaurus-uri>
+      <biol:order property="biol:order">Hymenoptera</biol:order>
+      <biol:family property="biol:family">Braconidae</biol:family>
+      <biol:genus property="biol:genus">Syngaster</biol:genus>
+      <biol:species property="biol:species">lepida</biol:species>
+      <cabi:notes property="notes">= Syngaster lepidus</cabi:notes>
+    </cabi:organism>
+    <cabi:introduced-to>
+      <cabi:old-new-world>OW</cabi:old-new-world>
+      <cabi:bio-geographic-range-uri range-code="" name="AF">urn:cabi.org:biocat:refdata:id:category:regions:item:1</cabi:bio-geographic-range-uri>
+      <cabi:country iso-code="" name="SOUTH AFRICA">urn:cabi.org:biocat:refdata:id:category:country:item:235</cabi:country>
+    </cabi:introduced-to>
+    <cabi:export-from>
+      <cabi:world>OW</cabi:world>
+      <cabi:bio-geographic-range-uri property="bio-geographic-range-uri" range-code="" name="AU">urn:cabi.org:biocat:refdata:id:category:regions:item:2</cabi:bio-geographic-range-uri>
+      <cabi:country property="country" iso-code="">urn:cabi.org:biocat:refdata:id:category:country:item:42</cabi:country>
+    </cabi:export-from>
+  </cabi:agent>
+  <cabi:outcome>
+    <cabi:establishment property="establishment" value="Not established">urn:cabi.org:biocat:refdata:id:category:establishment:item:14</cabi:establishment>
+  </cabi:outcome>
+  <cabi:target>
+    <cabi:organism>
+      <cabi:organism-uri>urn:cabi.org:biocat:refdata:id:category:organism:item:56</cabi:organism-uri>
+      <cabi:Thesaurus-uri property="cabi:Thesaurus-uri">http://id.cabi.org/cabt/00000</cabi:Thesaurus-uri>
+      <biol:order property="biol:order">Coleoptera</biol:order>
+      <biol:family property="biol:family">Cerambycidae</biol:family>
+      <biol:genus property="biol:genus">Phoracantha</biol:genus>
+      <biol:species property="biol:species">recurva</biol:species>
+    </cabi:organism>
+    <cabi:habitat>
+      <cabi:world>OW</cabi:world>
+      <cabi:bio-geo-range-uri range-code="XX">urn:cabi.org:biocat:refdata:id:category:regions:item:2</cabi:bio-geo-range-uri>
+      <cabi:country iso-code="AUSTRALIA">urn:cabi.org:biocat:refdata:id:category:country:item:42</cabi:country>
+    </cabi:habitat>
+    <cabi:threatened-species>
+      <cabi:crop>eucalyptus</cabi:crop>
+    </cabi:threatened-species>
+  </cabi:target>
+  <cabi:references>
+    <cabi:reference>
+      <dcterms:bibliographicCitation property="citation">
+        Kirsten &&#35;38; Tribe 1995
+        Neuenschwander et al 2003
+      </dcterms:bibliographicCitation>
+    </cabi:reference>
+  </cabi:references>
+  <cabi:additional-information>
+    <cabi:comments>Pest not in CPC OK ANI95</cabi:comments>
+  </cabi:additional-information>
+</cabi:bio-event>
