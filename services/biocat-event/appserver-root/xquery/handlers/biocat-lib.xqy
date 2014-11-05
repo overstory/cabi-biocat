@@ -12,6 +12,8 @@ declare variable $biocat-collection-name := "urn:cabi.org:id:collection:biocat:e
 
 declare variable $BIOCAT-COLLECTIONS := ($biocat-collection-name);
 
+declare private variable $BIOCAT-QUERY-PARAMETERS-TOKENISE-REGEX := "[, ]+";
+
 (: ------------------------------------------------- :)
 
 (: Public functions :)
@@ -30,307 +32,215 @@ declare function get-biocat-event-by-id (
 
 
 declare function search-biocat-event-items (
-	$terms as xs:string?,
-	$year as xs:string?,
-	$year-range as xs:string?,
-	$agent as xs:string?,
-	$target as xs:string?,
-	$crop as xs:string?,
-	$location-introduced-to as xs:string?,
-	$location-exported-from as xs:string?,
-	$genus as xs:string?,
-	$order as xs:string?,
-	$establishment as xs:string?,
-	$impact as xs:string?,
-	$result as xs:string?,
-	$page as xs:int,
-	$ipp as xs:int,
-	$facets as xs:string?	
-)
- as element(cabi:results-page)?
+	$search-options as element(cabi:biocat-search-options)
+) as element(cabi:results-page)?
 {
-	let $start-item as xs:int := (($page - 1) * $ipp) + 1
-	let $end-item as xs:int := ($start-item + $ipp) - 1
+
+	let $year-range as xs:string? := if (fn:exists ($search-options/cabi:year-range)) then $search-options/cabi:year-range else ()
+	let $start-end-years := fn:tokenize ($year-range, "-") ! xs:gYear(.)
+	let $start-year := if ((fn:count ($start-end-years) > 1) or fn:not(fn:starts-with ($year-range, "-"))) then $start-end-years[1] else ()
+	let $end-year := if (fn:count ($start-end-years) > 1) then $start-end-years[2] else if (fn:not (fn:ends-with ($year-range, "-"))) then $start-end-years[1] else ()
+	
+	let $page as xs:integer := if (fn:exists ($search-options/cabi:page)) then xs:integer ($search-options/cabi:page) else xs:integer("1")
+	let $ipp as xs:integer := if (fn:exists ($search-options/cabi:ipp)) then xs:integer ($search-options/cabi:ipp) else xs:integer("10")
+	
+	let $start-item as xs:integer := (($page - 1) * $ipp) + 1
+	let $end-item as xs:integer := ($start-item + $ipp) - 1
+	
+	
     let $query :=
         wrap-in-and ((
-			if (fn:exists($terms))
-				then wrap-in-or(
-							(cts:word-query ($terms),
-							 cts:element-attribute-word-query(
-								xs:QName("cabi:country"),
-								xs:QName("name"),
-								$terms,
-								("case-insensitive","diacritic-insensitive","stemmed","punctuation-insensitive")
-							 )
-							)
-						)
-				else (),
-			if (fn:exists($year))
-				then
-					wrap-in-or(
-						for $year-value in fn:tokenize($year,",")
-						return if (fn:string-length($year-value) = 4) then get-year-query($year-value) else ()
-					)
-				else (),
-			if (fn:exists($year-range))
-				then
-					wrap-in-or(
-						let $year-values := get-individual-years-from-range($year-range)
-						return get-year-range-query(
-								(if (fn:string-length($year-values[1]) > 0) then $year-values[1] else ()),
-								(if (fn:string-length($year-values[2]) > 0) then $year-values[2] else ())
-							)
-					)
-				else (),
-            if (fn:exists ($agent)) 
-				then
-					wrap-in-or(
-						for $agent-uri-value in fn:tokenize($agent,",")
-						return get-agent-query($agent-uri-value)
-					)
-				else (),
-            if (fn:exists ($target)) 
-				then
-					wrap-in-or(
-						for $target-uri-value in fn:tokenize($target,",")
-						return get-target-query($target-uri-value)
-					)
-				else (),
-			 if (fn:exists ($crop)) 
-				then get-crop-query($crop)
-				else (),
-			if (fn:exists ($location-introduced-to)) 
-				then
-					wrap-in-or(
-						for $location-introduced-to-uri-value in fn:tokenize($location-introduced-to,",")
-						return get-location-introduced-to-query($location-introduced-to-uri-value)
-					)
-				else (),
-			if (fn:exists ($location-exported-from)) 
-				then
-					wrap-in-or(
-						for $location-exported-from-uri-value in fn:tokenize($location-exported-from,",")
-						return  get-location-exported-from-query($location-exported-from-uri-value)
-					)
-				else (),
-			if (fn:exists($genus))
-				then get-genus-query ($genus)
-				else (),
-			if (fn:exists($order))
-				then get-order-query ($order)
-				else (),	
-			if (fn:exists ($establishment)) 
-				then
-					wrap-in-or(
-						for $establishment-uri-value in fn:tokenize($establishment,",")
-						return  get-establishment-query($establishment-uri-value)
-					)
-				else (),
-			if (fn:exists ($impact)) 
-				then
-					wrap-in-or(
-						for $impact-uri-value in fn:tokenize($impact,",")
-						return  get-impact-query($impact-uri-value)
-					)
-				else (),
-			if (fn:exists ($result)) 
-				then
-					wrap-in-or(
-						for $result-uri-value in fn:tokenize($result,",")
-						return  get-result-query($result-uri-value)
-					)
-				else ()
+			terms-query($search-options/cabi:terms),
+			year-query($search-options/cabi:year),   (: function mapping here, will suppress call if $year == () :) 
+			year-range-query($start-year, $end-year),
+            agent-query(tokenise-search-option($search-options/cabi:agent)),
+            target-query(tokenise-search-option($search-options/cabi:target)),
+			crop-query(tokenise-search-option($search-options/cabi:crop)),
+			location-introduced-to-query(tokenise-search-option($search-options/cabi:location-introduced-to)),
+			location-exported-from-query(tokenise-search-option($search-options/cabi:location-exported-from)),
+			genus-query(tokenise-search-option($search-options/cabi:genus)),
+			order-query(tokenise-search-option($search-options/cabi:order)),
+			establishment-query(tokenise-search-option($search-options/cabi:establishment)),
+			impact-query(tokenise-search-option($search-options/cabi:impact)),
+			result-query(tokenise-search-option($search-options/cabi:result))
         ))
 
+(:
 	let $total		:= xdmp:estimate(cts:search (fn:collection ($BIOCAT-COLLECTIONS), $query))
+:)
+	let $total := fn:count (cts:search (fn:collection ($BIOCAT-COLLECTIONS), $query))
 	let $results	:= cts:search (fn:collection ($BIOCAT-COLLECTIONS), $query)[$start-item to $end-item]
-
-	return element cabi:results-page {
-		attribute start { if ($start-item > $total) then 0 else $start-item },
-		attribute total { $total },
-		$results/cabi:bio-event
-	}
+	let $start-item := if ($start-item > $total) then 0 else $start-item
+	(: Get query string preparation values :)
+	let $query-string-values := bclib:create-query-string-parameters($search-options)
+	let $query-string-without-paging := "?" || fn:string-join ($query-string-values, "&amp;")
+	let $self-uri := if ($start-item >= 1) then "biocat" || $query-string-without-paging || "&amp;page=" || $page || "&amp;ipp=" || $ipp else ""
+	let $next-uri := if ($total > $end-item) then "biocat" || $query-string-without-paging || "&amp;page=" || $page + 1 || "&amp;ipp=" || $ipp else ""
+	let $previous-uri := if ($start-item > 1) then "biocat" || $query-string-without-paging || "&amp;page=" || $page - 1 || "&amp;ipp=" || $ipp else ""
+	
+	return 
+		<cabi:results-page 
+			start="{ $start-item }" 
+			total="{ $total }"
+			self-uri="{ $self-uri }" 
+			next-uri="{ $next-uri }" 
+			previous-uri="{ $previous-uri }">
+			{ $results/cabi:bio-event }
+		</cabi:results-page>
 };
-
 
 (: PRIVATE FUNCTIONS :)
 
-declare private function get-individual-years-from-range(
-	$year-range as xs:string
-)
+declare private function create-query-string-parameters(
+	$search-options as element(cabi:biocat-search-options)
+) as xs:string*
 {
-	let $year-values := fn:tokenize($year-range,"-")
-	return if (fn:count($year-values) = 0) then ()
-			else if (fn:count($year-values) <= 2) then $year-values
-			else $year-values[1 to 2]
-};
-
-declare private function get-year-range-query(
-	$start-year as xs:string?,
-	$end-year as xs:string?
-)
-{
-	let $dates-qname := xs:QName("cabi:dates")
-	let $start-year-qname := xs:QName("cabi:start-year")
-	let $end-year-qname := xs:QName("cabi:end-year")
-	let $first-release-qname := xs:QName("cabi:first-release")
-	return cts:element-query($dates-qname,
-				wrap-in-or(
-					(: query range :)
-					(
-						wrap-in-and(
-							(if (fn:exists($start-year)) then cts:element-range-query($start-year-qname,">=", xs:date($start-year || "-01-01")) else (),
-							if (fn:exists($end-year)) then cts:element-range-query($end-year-qname,"<=", xs:date($end-year || "-01-01")) else ())
-						),
-						wrap-in-and(
-							(if (fn:exists($start-year)) then cts:element-range-query($first-release-qname,">=", xs:date($start-year || "-01-01")) else (),
-							if (fn:exists($end-year)) then cts:element-range-query($first-release-qname,"<=", xs:date($end-year || "-01-01")) else ())
-						)
-					)
-				)
-			)
 	
+	for $search-option in $search-options/*[not(self::cabi:page) and not(self::cabi:ipp)]
+	let $query-string-parameters as xs:string? := 	
+		if (fn:string-length ($search-option/fn:string ()) > 0) 
+		then (fn:local-name ($search-option) || "=" || $search-option/fn:string())  
+		else ()
+	return $query-string-parameters
 };
 
-declare private function get-year-query(
-	$year as xs:string
-)
+declare private function tokenise-search-option(
+	$search-option as item()*
+) as xs:string*
 {
-	let $dates-qname := xs:QName("cabi:dates")
-	let $first-release-qname := xs:QName("cabi:first-release")
-	let $year-reported-qname := xs:QName("cabi:year-reported")
-	return cts:element-query($dates-qname,
-				wrap-in-or(
-							( 
-								wrap-in-and(
-									(
-										cts:element-range-query($first-release-qname,">=",xs:date($year || "-01-01")),
-										cts:element-range-query($first-release-qname,"<=",xs:date($year || "-12-31"))
-									 )
-								),
-								wrap-in-and(
-									(
-										cts:element-value-query($year-reported-qname,$year || "-??-??")
-									 )
-								)	
-							 )
-						   )
-				)
+	fn:tokenize($search-option,$BIOCAT-QUERY-PARAMETERS-TOKENISE-REGEX)	
 };
 
 
-declare private function get-genus-query(
-	$genus as xs:string
-)
+(: Query building functions :)
+declare private function agent-query (
+	$agent as xs:string*
+) as cts:query?
 {
-	let $organism-qname := xs:QName("cabi:organism")
-	let $genus-qname := xs:QName("biol:genus")
-	return cts:element-query($organism-qname,cts:element-value-query($genus-qname, $genus,("stemmed","case-insensitive")))
+	if (fn:empty($agent) or (fn:string-length($agent) = 0))
+	then ()
+	else cts:element-query (xs:QName ("cabi:agent"), cts:element-value-query (xs:QName ("cabi:organism-uri"), $agent, "exact"))
 };
 
-declare private function get-order-query(
-	$order as xs:string
-)
+declare private function crop-query(
+	$crop as xs:string*
+) as cts:query?
 {
-	let $organism-qname := xs:QName("cabi:organism")
-	let $order-qname := xs:QName("biol:order")
-	return cts:element-query($organism-qname,cts:element-value-query($order-qname, $order,("stemmed","case-insensitive")))
+	if (fn:empty($crop))
+	then ()
+	else cts:element-value-query(xs:QName("cabi:crop"), $crop,"exact")
 };
 
-declare private function get-crop-query(
-	$crop as xs:string
-)
+declare private function establishment-query(
+	$establishment as xs:string*
+) as cts:query?
 {
-	let $threaten-species-qname := xs:QName("cabi:threatened-species")
-	let $crop-qname := xs:QName("cabi:crop")
-	return cts:element-query($threaten-species-qname,cts:element-value-query($crop-qname, $crop,("stemmed","case-insensitive")))
+	if (fn:empty($establishment))
+	then ()
+	else cts:element-value-query(xs:QName("cabi:establishment"), $establishment,"exact")	
 };
 
-
-declare private function get-agent-query(
-	$agent-uri as xs:string
-)
+declare private function genus-query(
+	$genus as xs:string*
+) as cts:query?
 {
-	let $agent-qname := xs:QName("cabi:agent")
-	let $organism-uri-qname := xs:QName("cabi:organism-uri")
-	return cts:element-query($agent-qname,cts:element-value-query($organism-uri-qname, $agent-uri,"exact"))
+	if (fn:empty ($genus))
+	then ()
+	else cts:element-value-query (xs:QName ("biol:genus"), $genus, "case-insensitive")
 };
 
-declare private function get-target-query(
-	$target-uri as xs:string
-)
+declare private function impact-query(
+	$impact as xs:string*
+) as cts:query?
 {
-	let $target-qname := xs:QName("cabi:target")
-	let $organism-uri-qname := xs:QName("cabi:organism-uri")
-	return cts:element-query($target-qname,cts:element-value-query($organism-uri-qname, $target-uri,"exact"))
+	if (fn:empty ($impact)) 
+	then ()
+	else cts:element-query (xs:QName ("cabi:outcome"), cts:element-value-query (xs:QName ("cabi:impact"), $impact, "exact"))
 };
 
-declare private function get-establishment-query(
-	$establishment-uri as xs:string
-)
+declare private function location-exported-from-query(
+	$location-exported-from as xs:string*
+) as cts:query?
 {
-	let $outcome-qname := xs:QName("cabi:outcome")
-	let $establishment-uri-qname := xs:QName("cabi:establishment")
-	return cts:element-query($outcome-qname,cts:element-value-query($establishment-uri-qname, $establishment-uri,"exact"))
-};
-
-declare private function get-impact-query(
-	$impact-uri as xs:string
-)
-{
-	let $outcome-qname := xs:QName("cabi:outcome")
-	let $impact-uri-qname := xs:QName("cabi:impact")
-	return cts:element-query($outcome-qname,cts:element-value-query($impact-uri-qname, $impact-uri,"exact"))
-};
-
-declare private function get-result-query(
-	$result-uri as xs:string
-)
-{
-	let $outcome-qname := xs:QName("cabi:outcome")
-	let $result-uri-qname := xs:QName("cabi:result")
-	return cts:element-query($outcome-qname,cts:element-value-query($result-uri-qname, $result-uri,"exact"))
-};
-
-declare private function get-location-introduced-to-query(
-	$location-introduced-to-uri as xs:string
-)
-{
-	let $introduced-to-qname := xs:QName("cabi:introduced-to")
-	let $country-uri-qname := xs:QName("cabi:country")
-	let $bio-geographic-range-uri-qname := xs:QName("cabi:bio-geographic-range-uri")
-	let $country-region-uri-qname := xs:QName("cabi:country-region")
-	return cts:element-query(
-								$introduced-to-qname,
-								wrap-in-or (	
-												(
-													cts:element-value-query($country-uri-qname, $location-introduced-to-uri,"exact"),
-													cts:element-value-query($bio-geographic-range-uri-qname, $location-introduced-to-uri,"exact"),
-													cts:element-value-query($country-region-uri-qname, $location-introduced-to-uri,"exact")					
-												)
-											)
-							)
-};
-
-declare private function get-location-exported-from-query(
-	$location-export-from-uri as xs:string
-)
-{
-	let $exported-from-qname := xs:QName("cabi:exported-from")
-	let $country-uri-qname := xs:QName("cabi:country")
-	let $bio-geographic-range-uri-qname := xs:QName("cabi:bio-geographic-range-uri")
-	let $country-region-uri-qname := xs:QName("cabi:country-region")
-	return cts:element-query(
+	if (fn:empty ($location-exported-from)) 
+	then ()
+	else 
+		let $exported-from-qname := xs:QName ("cabi:exported-from")
+		let $country-uri-qname := xs:QName ("cabi:country")
+		let $bio-geographic-range-uri-qname := xs:QName ("cabi:bio-geographic-range-uri")
+		let $country-region-uri-qname := xs:QName ("cabi:country-region")
+		return cts:element-query(
 								$exported-from-qname,
 								wrap-in-or (	
 												(
-													cts:element-value-query($country-uri-qname, $location-export-from-uri,"exact"),
-													cts:element-value-query($bio-geographic-range-uri-qname, $location-export-from-uri,"exact"),
-													cts:element-value-query($country-region-uri-qname, $location-export-from-uri,"exact")					
+													cts:element-value-query ($country-uri-qname, $location-exported-from, "exact"),
+													cts:element-value-query ($bio-geographic-range-uri-qname, $location-exported-from, "exact"),
+													cts:element-value-query ($country-region-uri-qname, $location-exported-from, "exact")					
 												)
 											)
 							)
 };
+
+declare private function location-introduced-to-query(
+	$location-introduced-to as xs:string*
+) as cts:query?
+{
+	if (fn:empty ($location-introduced-to)) 
+	then ()
+	else 
+		let $introduced-to-qname := xs:QName ("cabi:introduced-to")
+		let $country-uri-qname := xs:QName ("cabi:country")
+		let $bio-geographic-range-uri-qname := xs:QName ("cabi:bio-geographic-range-uri")
+		let $country-region-uri-qname := xs:QName ("cabi:country-region")
+		return cts:element-query(
+								$introduced-to-qname,
+								wrap-in-or (	
+												(
+													cts:element-value-query ($country-uri-qname, $location-introduced-to, "exact"),
+													cts:element-value-query ($bio-geographic-range-uri-qname, $location-introduced-to, "exact"),
+													cts:element-value-query ($country-region-uri-qname, $location-introduced-to, "exact")					
+												)
+											)
+							)
+};
+
+declare private function order-query(
+	$order as xs:string*
+) as cts:query?
+{
+	if (fn:empty($order))
+	then ()
+	else cts:element-value-query (xs:QName ("biol:order"), $order, "case-insensitive")
+};
+
+declare private function result-query(
+	$result as xs:string*
+) as cts:query?
+{
+	if (fn:empty ($result)) 
+	then ()
+	else cts:element-value-query (xs:QName ("cabi:result"), $result, "exact")
+};
+
+declare private function target-query(
+	$target as xs:string*
+) as cts:query?
+{
+	if (fn:empty ($target)) 
+	then ()
+	else cts:element-query (xs:QName ("cabi:target"), cts:element-value-query (xs:QName ("cabi:organism-uri"), $target, "exact"))
+};
+
+declare private function terms-query(
+	$terms as xs:string?
+) as cts:query?
+{
+	if (fn:empty($terms))
+	then ()
+	else cts:word-query (fn:tokenize ($terms, "[,;:| \t]+")) 
+};
+
+
 
 (: ------------------------------------------------------ :)
 
@@ -354,4 +264,58 @@ declare private function wrap-in-and (
     else if (fn:count ($queries) = 1)
     then $queries
     else cts:and-query ($queries)
+};
+
+
+(:------------------------------------------------------:)
+declare private function year-range-query(
+	$target-start-year as xs:gYear?,
+	$target-end-year as xs:gYear?
+) as cts:query?
+{
+	if (fn:empty (($target-start-year, $target-end-year)))
+	then ()
+	else
+	let $target-start-year := ($target-start-year, xs:gYear ("0001"))[1]
+	let $target-end-year := ($target-end-year, xs:gYear ("9999"))[1]
+	let $dates-qname := xs:QName ("cabi:dates")
+	let $start-year-qname := xs:QName ("cabi:start-year")
+	let $end-year-qname := xs:QName ("cabi:end-year")
+	let $first-release-qname := xs:QName ("cabi:first-release")
+	
+	(: query range :)
+	return
+		cts:element-query (xs:QName ("cabi:report-range"),
+			wrap-in-and((
+				if (fn:exists ($target-start-year)) then cts:element-range-query (($end-year-qname), ">=", xs:date ($target-start-year || "-01-01")) else (),
+				if (fn:exists ($target-end-year)) then cts:element-range-query (($start-year-qname), "<=", xs:date($target-end-year || "-12-31")) else ()
+			))
+		)
+};
+
+declare function year-query (
+	$year as xs:string?
+) as cts:query?
+{
+	(:if (fn:string-length ($year) > 0) :)
+	if (fn:not(fn:empty ($year)))
+	then
+		let $year-queries :=
+			let $first-release-qname := xs:QName("cabi:first-release")
+			let $year-reported-qname := xs:QName("cabi:year-reported")
+			for $year-value in fn:tokenize($year,"[, ]+")
+			return
+				if (fn:not(fn:empty($year-value)) and ($year-value castable as xs:gYear))
+				then 
+					(wrap-in-and((
+							cts:element-range-query ($first-release-qname,">=", xs:date ($year || "-01-01")),
+							cts:element-range-query ($first-release-qname,"<=", xs:date ($year || "-12-31"))
+						)),
+						cts:element-value-query ($year-reported-qname, $year))
+				else ()
+		return 	if (fn:empty($year-queries))
+				then ()
+				else wrap-in-or($year-queries)	
+	else
+		()
 };
