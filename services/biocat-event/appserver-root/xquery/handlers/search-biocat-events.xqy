@@ -8,52 +8,46 @@ declare namespace cabi = "http://namespaces.cabi.org/namespaces/cabi";
 declare namespace biol = "http://ontologi.es/biol/ns";
 declare namespace dcterms = "http://purl.org/dc/terms";
 declare namespace atom = "http://www.w3.org/2005/Atom";
+
+
 (: ---------------------------------------------------- :)
 (:biocat{?terms,year,year-range,agent,target,crop,location,genus,order,establishment,impact,result,page,ipp,facets}:)
 
 declare variable $biocat-search-options :=
 	<cabi:biocat-search-options>
-		<cabi:terms>{ xdmp:get-request-field ("terms", ()) }</cabi:terms>
-		<cabi:year>{ xdmp:get-request-field ("year", ()) }</cabi:year>
-		<cabi:year-range>{ xdmp:get-request-field ("year-range", ()) }</cabi:year-range>
-		<cabi:agent>{ xdmp:get-request-field ("agent", ()) }</cabi:agent>
-		<cabi:target>{  xdmp:get-request-field ("target", ()) }</cabi:target>
-		<cabi:crop>{ xdmp:get-request-field ("crop", ()) }</cabi:crop>
-		<cabi:location-introduced-to>{ xdmp:get-request-field ("location-introduced-to", ()) }</cabi:location-introduced-to>
-		<cabi:location-exported-from>{ xdmp:get-request-field ("location-exported-from", ()) }</cabi:location-exported-from>
-		<cabi:order>{ xdmp:get-request-field ("order", ()) }</cabi:order>
-		<cabi:genus>{ xdmp:get-request-field ("genus", ()) }</cabi:genus>
-		<cabi:impact>{ xdmp:get-request-field ("impact", ())}</cabi:impact>
-		<cabi:establishment>{ xdmp:get-request-field ("establishment", ()) }</cabi:establishment>
-		<cabi:result>{ xdmp:get-request-field ("result", ()) }</cabi:result>
-		<cabi:facets>{ xdmp:get-request-field ("facets", ()) }</cabi:facets>
 		<cabi:page>{ xs:integer (xdmp:get-request-field ("page", "1")) }</cabi:page>
 		<cabi:ipp>{ xs:integer (xdmp:get-request-field ("ipp", "10")) }</cabi:ipp>
+		<cabi:terms>{ xdmp:get-request-field ("terms", ()) }</cabi:terms>
+		<cabi:year-range>{ xdmp:get-request-field ("year-range", ()) }</cabi:year-range>
+		{
+			for	$year in bclib:tokenise-query-string-values("year") return <cabi:year>{ $year }</cabi:year> ,
+			for	$agent in bclib:tokenise-query-string-values("agent") return <cabi:agent>{ $agent }</cabi:agent> ,
+			for	$target in bclib:tokenise-query-string-values("target") return <cabi:target>{ $target }</cabi:target> ,
+			for	$crop in bclib:tokenise-query-string-values("crop")	return <cabi:crop>{ $crop }</cabi:crop> ,
+			for	$location-introduced-to in bclib:tokenise-query-string-values("location-introduced-to") return <cabi:location-introduced-to>{ $location-introduced-to }</cabi:location-introduced-to> ,
+			for	$location-exported-from in bclib:tokenise-query-string-values("location-exported-from") return <cabi:location-exported-from>{ $location-exported-from }</cabi:location-exported-from> ,
+			for	$order in bclib:tokenise-query-string-values("order") return <cabi:order>{ $order }</cabi:order> ,
+			for	$genus in bclib:tokenise-query-string-values("genus") return <cabi:genus>{ $genus }</cabi:genus> ,
+			for	$impact in bclib:tokenise-query-string-values("impact") return <cabi:impact>{ $impact }</cabi:impact> ,
+			for	$establishment in bclib:tokenise-query-string-values("establishment") return <cabi:establishment>{ $establishment }</cabi:establishment> ,
+			for	$result in bclib:tokenise-query-string-values("result") return <cabi:result>{ $result }</cabi:result>
+		}
+		<cabi:facets>{ xdmp:get-request-field ("facets", "false") }</cabi:facets>
 	</cabi:biocat-search-options>
 ;
 
 declare variable $results-page as element(cabi:results-page)? := bclib:search-biocat-event-items (
 	$biocat-search-options
 );
-
-
 <atom:feed xmlns="http://www.w3.org/2005/Atom"
     about="urn:cabi.org:search-result:biocat_event_terms=acme"
     xmlns:s="http://ns.cabi.org/namespaces/search">
 	<atom:id>{sem:uuid-string()}</atom:id>
 	<atom:updated>{ rhttp:date-as-utc (fn:current-dateTime()) }</atom:updated>
 	<atom:title>CABI Biocat-event items by search</atom:title>
-	
 	{
-		if (fn:string-length ($results-page/@self-uri/fn:string()) > 0)
-		then <atom:link rel="self" href="{ $results-page/@self-uri/fn:string() }" type="application/atom+xml"/>	
-		else (),
-		if (fn:string-length ($results-page/@next-uri/fn:string()) > 0)
-		then <atom:link rel="next" href="{ $results-page/@next-uri/fn:string() }" type="application/atom+xml"/>	
-		else (),
-		if (fn:string-length ($results-page/@previous-uri/fn:string()) > 0)
-		then <atom:link rel="prev" href="{ $results-page/@previous-uri/fn:string() }" type="application/atom+xml"/>	
-		else ()	
+		for $link in $results-page/cabi:paging-link
+		return <atom:link rel="{ $link/@type }" href="{ $link/@href }" />
 	}
 	<s:results-meta>
 		<s:total-hits>{ $results-page/@total/fn:string() }</s:total-hits>

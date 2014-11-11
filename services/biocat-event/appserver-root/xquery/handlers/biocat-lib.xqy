@@ -7,6 +7,7 @@ declare namespace rd = "http://namespaces.cabi.org/namespaces/cabi/refdata";
 declare namespace cabi = "http://namespaces.cabi.org/namespaces/cabi";
 declare namespace biol = "http://ontologi.es/biol/ns";
 declare namespace dcterms = "http://purl.org/dc/terms";
+declare namespace atom = "http://www.w3.org/2005/Atom";
 
 declare variable $biocat-collection-name := "urn:cabi.org:id:collection:biocat:event";
 
@@ -53,16 +54,16 @@ declare function search-biocat-event-items (
 			terms-query($search-options/cabi:terms),
 			year-query($search-options/cabi:year),   (: function mapping here, will suppress call if $year == () :) 
 			year-range-query($start-year, $end-year),
-            agent-query(tokenise-search-option($search-options/cabi:agent)),
-            target-query(tokenise-search-option($search-options/cabi:target)),
-			crop-query(tokenise-search-option($search-options/cabi:crop)),
-			location-introduced-to-query(tokenise-search-option($search-options/cabi:location-introduced-to)),
-			location-exported-from-query(tokenise-search-option($search-options/cabi:location-exported-from)),
-			genus-query(tokenise-search-option($search-options/cabi:genus)),
-			order-query(tokenise-search-option($search-options/cabi:order)),
-			establishment-query(tokenise-search-option($search-options/cabi:establishment)),
-			impact-query(tokenise-search-option($search-options/cabi:impact)),
-			result-query(tokenise-search-option($search-options/cabi:result))
+            agent-query($search-options/cabi:agent),
+            target-query($search-options/cabi:target),
+			crop-query($search-options/cabi:crop),
+			location-introduced-to-query($search-options/cabi:location-introduced-to),
+			location-exported-from-query($search-options/cabi:location-exported-from),
+			genus-query($search-options/cabi:genus),
+			order-query($search-options/cabi:order),
+			establishment-query($search-options/cabi:establishment),
+			impact-query($search-options/cabi:impact),
+			result-query($search-options/cabi:result)
         ))
 
 (:
@@ -74,19 +75,46 @@ declare function search-biocat-event-items (
 	(: Get query string preparation values :)
 	let $query-string-values := bclib:create-query-string-parameters($search-options)
 	let $query-string-without-paging := "?" || fn:string-join ($query-string-values, "&amp;")
-	let $self-uri := if ($start-item >= 1) then "biocat" || $query-string-without-paging || "&amp;page=" || $page || "&amp;ipp=" || $ipp else ""
-	let $next-uri := if ($total > $end-item) then "biocat" || $query-string-without-paging || "&amp;page=" || $page + 1 || "&amp;ipp=" || $ipp else ""
-	let $previous-uri := if ($start-item > 1) then "biocat" || $query-string-without-paging || "&amp;page=" || $page - 1 || "&amp;ipp=" || $ipp else ""
-	
+	let $self-uri := if ($start-item >= 1) 
+					 then	"biocat" || $query-string-without-paging || "&amp;page=" || $page
+					 else ()
+	let $next-uri := if ($total > $end-item)
+					 then	"biocat" || $query-string-without-paging || "&amp;page=" || $page + 1
+					 else ()
+	let $previous-uri := if ($start-item > 1) 
+					 then	"biocat" || $query-string-without-paging || "&amp;page=" || $page - 1 
+					 else ()
+
 	return 
 		<cabi:results-page 
 			start="{ $start-item }" 
-			total="{ $total }"
-			self-uri="{ $self-uri }" 
-			next-uri="{ $next-uri }" 
-			previous-uri="{ $previous-uri }">
-			{ $results/cabi:bio-event }
+			total="{ $total }">
+			{
+				create-paging-link("self",$self-uri),
+				create-paging-link("next",$next-uri),
+				create-paging-link("prev",$previous-uri)
+			}
+			{ 
+				$results/cabi:bio-event 
+			}
 		</cabi:results-page>
+};
+
+declare function tokenise-query-string-values(
+	$query-string-parameter-name as xs:string
+) as xs:string*
+{
+	fn:tokenize(xdmp:get-request-field ($query-string-parameter-name,()), $BIOCAT-QUERY-PARAMETERS-TOKENISE-REGEX)	
+};
+
+declare private function create-paging-link(
+	$link-type as xs:string,
+	$link as xs:string?
+) as element(cabi:paging-link)?
+{
+	if (fn:empty($link))
+	then () 
+	else <cabi:paging-link type="{ $link-type }" href="{ $link }" />  
 };
 
 (: PRIVATE FUNCTIONS :)
@@ -96,7 +124,7 @@ declare private function create-query-string-parameters(
 ) as xs:string*
 {
 	
-	for $search-option in $search-options/*[not(self::cabi:page) and not(self::cabi:ipp)]
+	for $search-option in $search-options/*[not(self::cabi:page)]
 	let $query-string-parameters as xs:string? := 	
 		if (fn:string-length ($search-option/fn:string ()) > 0) 
 		then (fn:local-name ($search-option) || "=" || $search-option/fn:string())  
@@ -104,20 +132,12 @@ declare private function create-query-string-parameters(
 	return $query-string-parameters
 };
 
-declare private function tokenise-search-option(
-	$search-option as item()*
-) as xs:string*
-{
-	fn:tokenize($search-option,$BIOCAT-QUERY-PARAMETERS-TOKENISE-REGEX)	
-};
-
-
 (: Query building functions :)
 declare private function agent-query (
 	$agent as xs:string*
 ) as cts:query?
 {
-	if (fn:empty($agent) or (fn:string-length($agent) = 0))
+	if (fn:empty($agent))
 	then ()
 	else cts:element-query (xs:QName ("cabi:agent"), cts:element-value-query (xs:QName ("cabi:organism-uri"), $agent, "exact"))
 };
