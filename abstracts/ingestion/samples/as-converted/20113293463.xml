@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cabi-abstract xmlns:cabi="http://namespaces.cabi.org/namespaces/cabi"
+    xmlns="http://namespaces.cabi.org/namespaces/cabi">
+    <abstract-number>0E09912363</abstract-number>
+    <uri>urn:cabi.org:id:abstracts:pan:20113293463</uri>
+    <pan>20113293463</pan>
+    <bibliographic>
+        <item-type>Journal article</item-type>
+        <document-title>Naturwissenschaften</document-title>
+        <item-title xml:lang="en">Heterospecific pairing and hybridization between Nasutitermes
+            corniger and N. ephratae.</item-title>
+        <authors>
+            <author>
+                <display-name>Hartke, T. R.</display-name>
+                <email>t.hartke@neu.edu</email>
+            </author>
+            <author>
+                <display-name>Rosengaus, R. B.</display-name>
+            </author>
+        </authors>
+        <publication-info>
+            <doi>10.1007/s00114-011-0823-y</doi>
+            <url>http://www.springerlink.com/content/a2j5707361514152/</url>
+            <year>2011</year>
+            <volume>98</volume>
+            <issue>9</issue>
+            <page-range>745-753</page-range>
+            <issn>0028-1042</issn>
+            <language>English</language>
+            <number-of-references orginal-content="49 ref.">49</number-of-references>
+            <affiliation>
+                <display>Northeastern University Biology Department, 134 Mugar Hall, 360 Huntington
+                    Avenue, Boston, MA 02115, USA.</display>
+                <location>
+                    <address/>
+                </location>
+            </affiliation>
+            <publisher>
+                <display>Springer Berlin</display>
+                <location>
+                    <address><city>Heidelberg</city><country>Germany</country></address>
+                </location>
+            </publisher>
+        </publication-info>
+    </bibliographic>
+    <abstract-text>The sympatric neotropical termites Nasutitermes corniger and Nasutitermes
+        ephratae are clearly distinguishable based on morphology, nest architecture, defensive
+        secretion composition, and molecular markers. However, given the extensive ecological,
+        geographical, and behavioral overlap of these closely related species, the potential for
+        interbreeding may exist. To explore this possibility, heterospecific pairs were formed
+        experimentally to examine courtship and colony-establishment behaviors, and reproductive
+        potential. Courtship and nest construction behavior occurred in heterospecific pairs in a
+        similar manner to that of conspecific pairs. Survival of pairs depended upon the species of
+        the female partner. N. ephratae females paired with N. corniger males produced as many
+        offspring as conspecific pairs. N. corniger females mated to N. ephratae males, however,
+        produced significantly fewer offspring at 60 days post-establishment than the reciprocal
+        cross or conspecific N. ephratae or N. corniger pairs. This was also the only pairing in
+        which any aggression was observed. Heterospecific pairs and groups formed in mate choice
+        mesocosms, suggesting that species recognition between these two termites is not an
+        important aspect of mate choice. Overall, species mismatch tolerance and hybrid offspring
+        viability are high. The present data, together with previous evidence from defensive
+        secretions and isozyme analysis, suggest that hybridization may periodically occur in
+        nature, and that reproductive barriers between these two species may be incomplete.
+        Hybridization could provide a rare but important source of genetic diversity and may ensure
+        mating opportunities for the more abundant sex of alates in each species.</abstract-text>
+    <vocabulary-terms>
+        <preferred-term vocab="de">animal behaviour</preferred-term>
+        <preferred-term vocab="de">behaviour</preferred-term>
+        <preferred-term vocab="de">genetic diversity</preferred-term>
+        <preferred-term vocab="de">genetic variation</preferred-term>
+        <preferred-term vocab="de">hybridization</preferred-term>
+        <preferred-term vocab="de">mating</preferred-term>
+        <alternate-term vocab="id">animal behavior</alternate-term>
+        <alternate-term vocab="id">behavior</alternate-term>
+        <alternate-term vocab="id">genetic variability</alternate-term>
+        <alternate-term vocab="id">genotypic variability</alternate-term>
+        <alternate-term vocab="id">genotypic variation</alternate-term>
+        <alternate-term vocab="id">Nasutitermes corniger</alternate-term>
+        <alternate-term vocab="id">Nasutitermes ephratae</alternate-term>
+        <preferred-term vocab="od">Nasutitermes</preferred-term>
+        <ancestor-term vocab="up">Termitidae</ancestor-term>
+        <ancestor-term vocab="up">Isoptera</ancestor-term>
+        <ancestor-term vocab="up">insects</ancestor-term>
+        <ancestor-term vocab="up">Hexapoda</ancestor-term>
+        <ancestor-term vocab="up">arthropods</ancestor-term>
+        <ancestor-term vocab="up">invertebrates</ancestor-term>
+        <ancestor-term vocab="up">animals</ancestor-term>
+        <ancestor-term vocab="up">eukaryotes</ancestor-term>
+        <ancestor-term vocab="up">Nasutitermes</ancestor-term>
+        <term vocab="cabicode">YY300</term>
+        <term vocab="cabicode">YY500</term>
+        <term vocab="cabisubject">0E</term>
+        <term vocab="cabisubject">CA</term>
+        <term vocab="cabisubject">PE</term>
+    </vocabulary-terms>
+    <export-date>2014-11-11</export-date>
+    <abstract-copyright year="2014">m 2014 CAB International</abstract-copyright>
+</cabi-abstract>

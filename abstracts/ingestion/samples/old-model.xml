@@ -1,7 +1,10 @@
 
 <records>
 	<record>
+		<an>6T02804135\12345xyz</an>
 		<pa>20143084885</pa>
+		<bt>BatchNum1\BatchNum2\BatchNum3</bt>
+		<nd>ADN123</nd>
 		<bibl>
 			<it>Journal article</it>
 			<au>
@@ -10,8 +13,20 @@
 				<au3>Tomšík, K.</au3>
 				<au4>Struhár, M.</au4>
 			</au>
+			<ad>Duck, D.\Mouse, M.</ad>
+			<av>Duck, Donald M.\Public, John Q.</av>
+			<ca>
+				<ca1>Amce Giganticorp</ca1>
+				<ca2>Dewey, Cheetum &amp; Howe</ca2>
+			</ca>
+			<ed>
+				<ed1>Editor, First</ed1>
+				<ed2>Editor, Second</ed2>
+			</ed>
 			<do>Agricultural Economics (Zemědělská Ekonomika)</do>
 			<et>Application of the "boundary line analysis method" for the optimisation of the number of tractors used in an agricultural company.</et>
+			<ft>This is the foreign title, tres bien</ft>
+			<at>This is additional title information</at>
 			<pb>Czech Academy of Agricultural Sciences</pb>
 			<lp>Prague</lp>
 			<cp>Czech Republic</cp>
@@ -20,10 +35,14 @@
 			<no>1</no>
 			<pp>1-8</pp>
 			<sn>0139-570X</sn>
+			<bn>123-5434-4\69693-4342-3</bn>
 			<oi>10.2344/asfasd.asdasd.asdd</oi>
-			<la>English</la>
+			<cl>Vegas Baby</cl>
+			<ct>Bugs, bugs, bugs</ct>
+			<la>English\Klingon</la>
 			<ur>http://www.agriculturejournals.cz/web/AGRICECON.htm</ur>
 			<re>10 ref.</re>
+			<ms>This is some supplementary info</ms>
 			<aa>Department of Machinery Utilisation, Czech University of Life Sciences Prague, Kamýcká 129, 165 21 Prague 6, Czech Republic.</aa>
 			<em>kvk@tf.czu.cz</em>
 		</bibl>
@@ -36,7 +55,7 @@
 			<cc>EE110\NN400\ZZ900</cc>
 			<sc>8A\0R\CA\AG\FT\FF</sc>
 		</index>
-		<ex>2014423</ex>
+		<ex>20140423</ex>
 		<co>m 2014 CAB International</co>
 	</record>
 </records>

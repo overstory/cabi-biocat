@@ -3,6 +3,7 @@
 <cabi-abstract xmlns:cabi="http://namespaces.cabi.org/namespaces/cabi" xmlns="http://namespaces.cabi.org/namespaces/cabi" >
 	<uri>urn:cabi.org:id:abstracts:20143084885</uri>
 	<pan>20143084885</pan>
+	<batch-name>wk1452</batch-name>
 	<bibliographic>
 		<item-type>article</item-type>
 		<item-type>confpaper</item-type>
@@ -33,6 +34,7 @@
 		<document-title xml:lang="en">Agricultural Economics (Zemědělská Ekonomika)</document-title>
 		<item-title xml:lang="en">Application of the "boundary line analysis method" for the optimisation of the number of tractors used in an agricultural company.</item-title>
 		<item-title xml:lang="cz">Application of (in Czech)...</item-title>
+		<additional-title-info>This is additional title info</additional-title-info>
 		<publication-info>
 			<doi>10.1234/SDsasa786asd69asdgauSDGY</doi>
 			<url>http://www.agriculturejournals.cz/web/AGRICECON.htm</url>
@@ -44,8 +46,8 @@
 			<issn>0139-570X</issn>
 			<language xml:lang="en">English</language>
 			<number-of-references>10</number-of-references>
-			<institution>
-				<name>Department of Machinery Utilisation, Czech University of Life Sciences Prague</name>
+			<affiliation>
+				<display>Department of Machinery Utilisation, Czech University of Life Sciences Prague</display>
 				<location>
 					<address>
 						<address-line>Kamýcká 129</address-line>
@@ -55,20 +57,18 @@
 						<country iso2="cz">Czech Republic</country>
 					</address>
 				</location>
-			</institution>
+			</affiliation>
 
 			<puiblisher-specific>
 				<elsevier-meta>
 					<xyz>asdasd</xyz>
 				</elsevier-meta>
 			</puiblisher-specific>
-
 		</publication-info>
+
 		<publisher>
 			<name>Czech Academy of Agricultural Sciences</name>
 			<location>
-				<town>Prague</town>
-				<country iso2="cz">Czech Republic</country>
 				<address>
 					<address-line>Kamýcká 129</address-line>
 					<address-line>Kafka Building</address-line>

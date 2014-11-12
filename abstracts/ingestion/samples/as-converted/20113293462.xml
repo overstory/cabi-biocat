@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cabi-abstract xmlns:cabi="http://namespaces.cabi.org/namespaces/cabi"
+    xmlns="http://namespaces.cabi.org/namespaces/cabi">
+    <uri>urn:cabi.org:id:abstracts:pan:20113293462</uri>
+    <pan>20113293462</pan>
+    <bibliographic>
+        <item-type>Journal article</item-type>
+        <document-title>Naturwissenschaften</document-title>
+        <item-title xml:lang="en">Avoiding incidental predation by mammalian herbivores: accurate
+            detection and efficient response in aphids.</item-title>
+        <authors>
+            <author>
+                <display-name>Gish, M.</display-name>
+                <email>minbar@research.haifa.ac.il</email>
+            </author>
+            <author>
+                <display-name>Dafni, A.</display-name>
+            </author>
+            <author>
+                <display-name>Inbar, M.</display-name>
+            </author>
+        </authors>
+        <publication-info>
+            <doi>10.1007/s00114-011-0819-7</doi>
+            <url>http://www.springerlink.com/content/v5n48574156800v5/</url>
+            <year>2011</year>
+            <volume>98</volume>
+            <issue>9</issue>
+            <page-range>731-738</page-range>
+            <issn>0028-1042</issn>
+            <language>English</language>
+            <number-of-references orginal-content="62 ref.">62</number-of-references>
+            <affiliation>
+                <display>Department of Evolutionary and Environmental Biology, University of Haifa,
+                    Haifa, 31905, Israel.</display>
+                <location>
+                    <address/>
+                </location>
+            </affiliation>
+            <publisher>
+                <display>Springer Berlin</display>
+                <location>
+                    <address><city>Heidelberg</city><country>Germany</country></address>
+                </location>
+            </publisher>
+        </publication-info>
+    </bibliographic>
+    <abstract-text>Mammalian herbivores eat plants that may also provide food and shelter for
+        insects. The direct trophic effect of the browsing and grazing of mammalian herbivory on
+        insects, which is probably prevalent in terrestrial ecosystems, has been mostly neglected by
+        ecologists. We examined how the aphid Uroleucon sonchi L. deals with the danger of
+        incidental predation by mammalian herbivores. We found that most (76%) of the aphids in a
+        colony survive the ingestion of the plant by a feeding herbivore. They do so by sensing the
+        combination of heat and humidity in the herbivore's breath and immediately dropping off the
+        plant in large numbers. Their ability to sense the herbivore's breath or their tendency to
+        drop off the plant weakens as ambient temperature rises. This could indicate a limitation of
+        the aphids' sensory system or an adaptation that enables them to avoid the hostile
+        conditions on a hot ground. Once on the ground, U. sonchi is highly mobile and capable of
+        locating a new host plant by advancing in a pattern that differs significantly from random
+        movement. The accurate and efficient defense mechanism of U. sonchi emphasizes the
+        significance of incidental predation as a danger to plant-dwelling
+        invertebrates.</abstract-text>
+    <vocabulary-terms>
+        <preferred-term vocab="de">animal behaviour</preferred-term>
+        <preferred-term vocab="de">behaviour</preferred-term>
+        <preferred-term vocab="de">herbivores</preferred-term>
+        <preferred-term vocab="de">insect pests</preferred-term>
+        <preferred-term vocab="de">plant pests</preferred-term>
+        <preferred-term vocab="de">predation</preferred-term>
+        <preferred-term vocab="de">temperature</preferred-term>
+        <alternate-term vocab="id">animal behavior</alternate-term>
+        <alternate-term vocab="id">behavior</alternate-term>
+        <alternate-term vocab="id">pest insects</alternate-term>
+        <preferred-term vocab="od">insects</preferred-term>
+        <preferred-term vocab="od">Uroleucon sonchi</preferred-term>
+        <ancestor-term vocab="up">Hexapoda</ancestor-term>
+        <ancestor-term vocab="up">arthropods</ancestor-term>
+        <ancestor-term vocab="up">invertebrates</ancestor-term>
+        <ancestor-term vocab="up">animals</ancestor-term>
+        <ancestor-term vocab="up">eukaryotes</ancestor-term>
+        <ancestor-term vocab="up">Uroleucon</ancestor-term>
+        <ancestor-term vocab="up">Aphididae</ancestor-term>
+        <ancestor-term vocab="up">Aphidoidea</ancestor-term>
+        <ancestor-term vocab="up">Sternorrhyncha</ancestor-term>
+        <ancestor-term vocab="up">Homoptera</ancestor-term>
+        <ancestor-term vocab="up">Hemiptera</ancestor-term>
+        <ancestor-term vocab="up">insects</ancestor-term>
+        <term vocab="cabicode">FF620</term>
+        <term vocab="cabicode">YY500</term>
+        <term vocab="cabisubject">0E</term>
+        <term vocab="cabisubject">CA</term>
+        <term vocab="cabisubject">PE</term>
+    </vocabulary-terms>
+    <export-date>2014-11-11</export-date>
+    <abstract-copyright year="2014">m 2014 CAB International</abstract-copyright>
+</cabi-abstract>

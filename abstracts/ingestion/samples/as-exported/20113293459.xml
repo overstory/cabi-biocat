@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+    <an>0M09009596</an>
+    <pa>20113293459</pa>
+    <bibl>
+        <it>Journal article</it>
+        <au>
+            <au1>Poliakovskiy, S. O.</au1>
+            <au2>Dmitriev, O. P.</au2>
+        </au>
+        <do>Cytology and Genetics</do>
+        <et>Study of priming for callose accumulation in Allium cepa during treatment with biotic
+            inducers.</et>
+        <pb>Allerton Press, Inc.</pb>
+        <lp>New York</lp>
+        <cp>USA</cp>
+        <yr>2011</yr>
+        <vl>45</vl>
+        <no>4</no>
+        <pp>245-248</pp>
+        <sn>0095-4527</sn>
+        <la>English</la>
+        <ur>http://www.springerlink.com/content/274381771840620k/</ur>
+        <oi>10.3103/S0095452711040086</oi>
+        <ms>Translated from Tsitologiya i Genetika (2011) 45 (4), 50-54 (Ru).</ms>
+        <re>17 ref.</re>
+        <aa>Institute of Cell Biology and Genetic Engineering, National Academy of Sciences of
+            Ukraine, ul. Acad. Zabolotnogo 148, Kyiv 03680, Ukraine.</aa>
+        <em>polykovskiy@yandex.ru</em>
+    </bibl>
+    <ab>The effect of preliminary treatment with inducers of resistance (salicylic and hexanoic
+        acids) at the level of callose synthesis in cells of three onion cultivars have been
+        studied. The ability of these inducers to increase the resistance of onion to pathogenic
+        infections at low concentrations was shown. Using the method of spectrofluorimetry, we
+        demonstrated that the treatment of onion scales with salicylic and hexanoic acids led to the
+        priming of the reaction of callose accumulation.</ab>
+    <index>
+        <de>callose\cultivars\disease resistance\hexanoic acid\in vitro culture\onions\plant
+            pathogens\salicylic acid</de>
+        <id>caproic acid\cultivated varieties\phytopathogens\resistance to disease</id>
+        <od>Allium\Allium cepa</od>
+        <up>Alliaceae\Liliaceae\Liliales\monocotyledons\angiosperms\Spermatophyta\plants\eukaryotes\Allium</up>
+        <ry>9064-51-1\142-62-1\69-72-7</ry>
+        <cc>FF003\FF020\FF170\FF610\HH600</cc>
+        <sc>7B\7W\0C\0P\0M\CA\PE\HO\PL\QC\HQ\AA</sc>
+    </index>
+    <ex>20141111</ex>
+    <co>&#109; 2014 CAB International</co>
+</record>
