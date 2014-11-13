@@ -10,6 +10,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>../abstracts/ingestion/mlcp-transform/abstract-transform.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>abstracts-transform</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../abstracts/ingestion/samples/as-exported/20113293463.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -269,7 +284,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ron/Work/cabi/abstracts/ingestion/mlcp-transform/abstracts-transform.xsl</String>
+                                    <String>file:/Users/ron/Work/cabi/abstracts/ingestion/mlcp-transform/abstract-transform.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>file:/Users/ron/Work/cabi/abstracts/ingestion/samples/old-model.xml</String>

@@ -3,13 +3,34 @@
 	xmlns="http://namespaces.cabi.org/namespaces/cabi"
 	>
 
+	<!--
+		This transform converts CABI abstract records (as exported from Progress)	 into the newer content
+		model for import into MarkLogic.  This stylesheet is intended to run as a transform step in an
+		import via the mlcp import tool (supplied by MarkLogic).  It can also be run independently, such
+		as from oXygen, on individual XML files.  The command line to run mlcp will look something like
+		this (see the XQuery wrapper for mlcp that invokes this stylesheet, transform-abstract.xqy):
+
+		URIPREFIX=/abstracts
+		XFORMMOD=/transform-abstract.xqy
+		XFORMNS=http://cabi.org/transform
+
+		$MLCPBIN/mlcp.sh import -mode local -host localhost -port 12101 -username admin -password admin \
+			-input_file_path $INPUTDIR -output_uri_prefix $URIPREFIX  -output_uri_replace "$INPUTDIR,''" \
+			-transform_module $XFORMMOD -transform_namespace $XFORMNS
+
+		Written Nov 2014 by Ron Hitchens of OverStory LLP (ron@overstory.co.uk)
+	-->
+
 	<xsl:template match="/records">
 		<xsl:apply-templates select="record"/>
 	</xsl:template>
 
 	<xsl:template match="record">
 		<cabi-abstract>
-			<xsl:apply-templates/>
+			<xsl:apply-templates select="pa"/>
+			<xsl:apply-templates select="an|nd|bt|co|ex"/>
+			<xsl:apply-templates select="bibl/yr" mode="sort-year"/>
+			<xsl:apply-templates select="*[not(local-name(.) = ('pa','an','nd','bt','co','ex'))]"/>
 		</cabi-abstract>
 	</xsl:template>
 
@@ -19,18 +40,23 @@
 	</xsl:template>
 
 	<xsl:template match="pa">
-		<uri>urn:cabi.org:id:abstracts:pan:<xsl:value-of select="."/></uri>
+		<uri>urn:cabi.org:id:abstracts:pan:<xsl:value-of select="normalize-space(.)"/></uri>
 		<pan><xsl:value-of select="."/></pan>
 	</xsl:template>
 
 	<xsl:template match="nd">
-		<and><xsl:value-of select="."/></and>
+		<and><xsl:value-of select="normalize-space(.)"/></and>
 	</xsl:template>
 
 	<xsl:template match="bt">
 		<xsl:call-template name="backslash-split"><xsl:with-param name="element-name">batch-name</xsl:with-param><xsl:with-param name="value"><xsl:value-of select="."/></xsl:with-param></xsl:call-template>
 	</xsl:template>
 
+	<xsl:template match="yr" mode="sort-year">
+		<xsl:if test="matches(., '^[0-9]{4}')">
+			<sort-year><xsl:value-of select="substring(., 1, 4)"/></sort-year>
+		</xsl:if>
+	</xsl:template>
 
 	<xsl:template match="bibl">
 		<bibliographic>
@@ -81,31 +107,31 @@
 
 	<!-- Bibliographic -->
 	<xsl:template match="it">
-		<item-type><xsl:value-of select="."/></item-type>
+		<item-type><xsl:value-of select="normalize-space(.)"/></item-type>
 	</xsl:template>
 
 	<xsl:template match="do">
-		<document-title><xsl:value-of select="."/></document-title>
+		<document-title><xsl:value-of select="normalize-space(.)"/></document-title>
 	</xsl:template>
 
 	<xsl:template match="ct">
-		<conference-title><xsl:value-of select="."/></conference-title>
+		<conference-title><xsl:value-of select="normalize-space(.)"/></conference-title>
 	</xsl:template>
 
 	<xsl:template match="cl">
-		<conference-location><xsl:value-of select="."/></conference-location>
+		<conference-location><xsl:value-of select="normalize-space(.)"/></conference-location>
 	</xsl:template>
 
 	<xsl:template match="et">
-		<item-title xml:lang="en"><xsl:value-of select="."/></item-title>
+		<item-title xml:lang="en"><xsl:value-of select="normalize-space(.)"/></item-title>
 	</xsl:template>
 
 	<xsl:template match="ft">
-		<non-english-title><xsl:value-of select="."/></non-english-title>
+		<non-english-title><xsl:value-of select="normalize-space(.)"/></non-english-title>
 	</xsl:template>
 
 	<xsl:template match="at">
-		<additional-title-info><xsl:value-of select="."/></additional-title-info>
+		<additional-title-info><xsl:value-of select="normalize-space(.)"/></additional-title-info>
 	</xsl:template>
 
 	<xsl:template match="ed" mode="editor-list">
@@ -131,14 +157,14 @@
 	<xsl:template match="ad" mode="author-name">
 		<xsl:for-each select="tokenize(., '\\')" >
 			<additional-author>
-				<display-name><xsl:value-of select="."/></display-name>
+				<display-name><xsl:value-of select="normalize-space(.)"/></display-name>
 			</additional-author>
 		</xsl:for-each>
 	</xsl:template>
 	<xsl:template match="av" mode="author-name">
 		<xsl:for-each select="tokenize(., '\\')" >
 			<author-variant>
-				<display-name><xsl:value-of select="."/></display-name>
+				<display-name><xsl:value-of select="normalize-space(.)"/></display-name>
 			</author-variant>
 		</xsl:for-each>
 	</xsl:template>
@@ -165,7 +191,7 @@
 		<xsl:param name="element-name">author</xsl:param>
 		<xsl:variable name="pos" select="position()"/>
 		<xsl:element name="{$element-name}">
-			<display-name><xsl:value-of select="."/></display-name>
+			<display-name><xsl:value-of select="normalize-space(.)"/></display-name>
 			<xsl:if test="exists($emails[$pos])">
 				<email><xsl:value-of select="$emails[$pos]"/></email>
 			</xsl:if>
@@ -194,20 +220,21 @@
 		</publication-info>
 	</xsl:template>
 
-	<xsl:template match="oi" mode="publication-info"><doi><xsl:value-of select="."/></doi></xsl:template>
-	<xsl:template match="ur" mode="publication-info"><url><xsl:value-of select="."/></url></xsl:template>
-	<xsl:template match="yr" mode="publication-info"><year><xsl:value-of select="."/></year></xsl:template>
-	<xsl:template match="vl" mode="publication-info"><volume><xsl:value-of select="."/></volume></xsl:template>
-	<xsl:template match="no" mode="publication-info"><issue><xsl:value-of select="."/></issue></xsl:template>
-	<xsl:template match="pp" mode="publication-info"><page-range><xsl:value-of select="."/></page-range></xsl:template>
-	<xsl:template match="sn" mode="publication-info"><issn><xsl:value-of select="."/></issn></xsl:template>
+	<xsl:template match="oi" mode="publication-info"><doi><xsl:value-of select="normalize-space(.)"/></doi></xsl:template>
+	<xsl:template match="ur" mode="publication-info"><url><xsl:value-of select="normalize-space(.)"/></url></xsl:template>
+	<!-- FixMe -->
+	<xsl:template match="yr" mode="publication-info"><year><xsl:value-of select="normalize-space(.)"/></year></xsl:template>
+	<xsl:template match="vl" mode="publication-info"><volume><xsl:value-of select="normalize-space(.)"/></volume></xsl:template>
+	<xsl:template match="no" mode="publication-info"><issue><xsl:value-of select="normalize-space(.)"/></issue></xsl:template>
+	<xsl:template match="pp" mode="publication-info"><page-range><xsl:value-of select="normalize-space(.)"/></page-range></xsl:template>
+	<xsl:template match="sn" mode="publication-info"><issn><xsl:value-of select="normalize-space(.)"/></issn></xsl:template>
 	<xsl:template match="bn" mode="publication-info">
 		<xsl:call-template name="backslash-split"><xsl:with-param name="element-name">isbn</xsl:with-param><xsl:with-param name="value"><xsl:value-of select="."/></xsl:with-param></xsl:call-template>
 	</xsl:template>
 	<xsl:template match="la" mode="publication-info">
 		<xsl:call-template name="backslash-split"><xsl:with-param name="element-name">language</xsl:with-param><xsl:with-param name="value"><xsl:value-of select="."/></xsl:with-param></xsl:call-template>
 	</xsl:template>
-	<xsl:template match="ms" mode="publication-info"><supplementary-information><xsl:value-of select="."/></supplementary-information></xsl:template>
+	<xsl:template match="ms" mode="publication-info"><supplementary-information><xsl:value-of select="normalize-space(.)"/></supplementary-information></xsl:template>
 	<xsl:template match="re" mode="publication-info">
 		<number-of-references>
 			<xsl:attribute name="orginal-content"><xsl:value-of select="."/></xsl:attribute>
@@ -231,7 +258,7 @@
 		</affiliation>
 	</xsl:template>
 
-	<xsl:template match="aa" mode="affiliation-info"><display><xsl:value-of select="."/></display></xsl:template>
+	<xsl:template match="aa" mode="affiliation-info"><display><xsl:value-of select="normalize-space(.)"/></display></xsl:template>
 
 	<!-- Bibliographic/Publisher Info -->
 	<xsl:template match="bibl" mode="publisher-info">
@@ -246,10 +273,10 @@
 		</publisher>
 	</xsl:template>
 
-	<xsl:template match="pb" mode="publisher-info"><display><xsl:value-of select="."/></display></xsl:template>
-	<xsl:template match="lp" mode="publisher-info"><city><xsl:value-of select="."/></city></xsl:template>
+	<xsl:template match="pb" mode="publisher-info"><display><xsl:value-of select="normalize-space(.)"/></display></xsl:template>
+	<xsl:template match="lp" mode="publisher-info"><city><xsl:value-of select="normalize-space(.)"/></city></xsl:template>
 	<!-- ToDo: Need to lookup ISO2 code for iso2="cc" on country element -->
-	<xsl:template match="cp" mode="publisher-info"><country><xsl:value-of select="."/></country></xsl:template>
+	<xsl:template match="cp" mode="publisher-info"><country><xsl:value-of select="normalize-space(.)"/></country></xsl:template>
 
 	<!-- To catch unmatched pub-info nodes.  The first ignores any node that's been explicitly matched,
 		the second catches anything not in the list.
@@ -332,7 +359,7 @@
 				<xsl:if test="$attr-name ne '__none__'">
 					<xsl:attribute name="{$attr-name}"><xsl:value-of select="$attr-value"/></xsl:attribute>
 				</xsl:if>
-				<xsl:value-of select="."/>
+				<xsl:value-of select="normalize-space(.)"/>
 			</xsl:element>
 		</xsl:for-each>
 	</xsl:template>
